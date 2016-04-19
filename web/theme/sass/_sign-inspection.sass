@@ -1,0 +1,257 @@
+#index-inspection
+  background: url("/theme/images/background/index-form-inspect-background2.jpg") center center
+  background-repeat: no-repeat
+  height: 820px
+  margin-top: -6px
+
+
+.index-inspection-left
+  margin-top: 366px
+  width: 65%
+  float: left
+
+.index-inspection-left-title
+  line-height: 18px
+  margin-top: 16px
+  span
+    color: white
+    font-size: 41.37px
+    font-family: $pfHandbookProthin
+
+  .index-inspection-left-wTitleUp
+    margin-left: 8px
+    font-family: $pfHandbookProMedium
+
+  .index-inspection-left-wTitleDown
+    margin-left: 8px
+    font-family: $pfHandbookProMedium
+
+.index-inspection-left-subTitle
+  color: white
+  font:
+    size: 20.76px
+    family: $pfHandbookProthin
+  text-align: left
+  width: 80%
+  position: relative
+  margin-top: 31px
+  padding-left: 2px
+  line-height: 18px
+
+  .index-inspection-left-subTitleIcon
+    background: url("/theme/images/icons/right-gray-arrow.png") center center
+    background-repeat: no-repeat
+    width: 23px
+    height: 8px
+    display: block
+    position: absolute
+    right: -25px
+    bottom: 2px
+
+.index-inspection-right
+  width: 34.56%
+  float: right
+  margin-top: 260px
+  margin-right: 2px
+
+.form-inspection-wrapper
+  height: 418px
+  width: 100%
+  background-color: white
+  border-bottom-left-radius: 6px
+  border-bottom-right-radius: 6px
+  padding: 11px 35px 5px 35px
+
+.form-inspection-title
+  color: $black1
+  font-size: 19.04px
+  text-align: left
+  text-transform: uppercase
+  font-family: $SegoeUIRegular
+
+.form-inspection-subTitle
+  color: $lightCyan2
+  font-size: 34.04px
+  text-transform: uppercase
+  margin-top: -5px
+  font-family: $SegoeUIRegular
+
+.form-inspection-subTitleSmall
+  font:
+    family: $openSansRegular
+    size: 14px
+  color: $black1
+  text-align: left
+  margin-bottom: 29px
+  padding-left: 14px
+
+#form-inspection
+  padding-left: 7px
+  padding-right: 4px
+  +user-select(none)
+
+.form-inspection-name
+  margin-bottom: 16px
+  input
+    width: 100%
+    height: 45px
+    border: 1px solid $gray5
+    border-radius: 3px
+    background: url("/theme/images/icons/form-index-user.png") 14px no-repeat
+    padding-left: 43px
+    outline: none
+    +input-placeholder
+      font:
+        family: $openSansRegular
+        size: 14px
+      color: $black1
+
+.form-inspection-number
+  margin-bottom: 16px
+  input
+    width: 100%
+    height: 45px
+    border: 1px solid $gray5
+    border-radius: 3px
+    background: url("/theme/images/icons/form-index-phone.png") 14px no-repeat
+    padding-left: 43px
+    outline: none
+    +input-placeholder
+      font:
+        family: $openSansRegular
+        size: 14px
+      color: $black1
+      background: url("/theme/images/icons/input-star.png") 72% center no-repeat
+
+.form-inspection-doctor
+  margin-bottom: 16px
+  position: relative
+  select
+    width: 100%
+    height: 45px
+    border: 1px solid $gray5
+    border-radius: 3px
+    background: url("/theme/images/icons/form-arrow-down-icon.png") 272px no-repeat
+    padding-left: 39px
+    outline: none
+    +input-placeholder
+      font:
+        family: $openSansRegular
+        size: 14px
+      color: $black1
+    +appearance(none)
+
+.s-hidden
+  visibility: hidden
+  padding-right: 10px
+
+.select
+  cursor: pointer
+  position: relative
+  font:
+    family: $openSansRegular
+    size: 14px
+  color: $black1
+  border: 1px solid $gray5
+  width: 100%
+  border-radius: 3px
+
+
+.styledSelect
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: white
+  padding: 0 10px
+  font:
+    family: $openSansRegular
+    size: 14px
+  color: $black1
+  padding-left: 42px
+  line-height: 42px
+  background: url("/theme/images/icons/form-inspected-doctor-icon.png") 14px no-repeat
+
+.styledSelect:after
+  content: ""
+  width: 0
+  height: 0
+  border: 4px solid transparent
+  border-color: black transparent transparent transparent
+  position: absolute
+  top: 20px
+  right: 12px
+
+.options
+  display: none
+  position: absolute
+  top: 100%
+  right: 0
+  left: 0
+  z-index: 999
+  margin: 0 0
+  padding: 0 0
+  list-style: none
+  border: 1px solid $gray5
+  background-color: white
+
+  li
+    font:
+      family: $openSansRegular
+      size: 14px
+    color: #8d8d8d
+    padding: 10px
+    border-bottom: 1px solid $gray5
+    width: 80%
+    display: block
+    margin: 0 auto
+    &:last-of-type
+      border-bottom: none
+    &:hover
+      background-color: $lightBlue9
+
+.form-inspection-anonymous
+  background: url("/theme/images/icons/form-index-mask.png") 14px no-repeat
+  width: 100%
+  min-height: 29px
+  font:
+    family: $openSansRegular
+    size: 14px
+  color: $gray6
+  padding-left: 54px
+  padding-top: 3px
+  margin: 26px 0 3px 0
+  font-weight: bolder
+
+.marLeft-2
+  margin-left: -2px
+
+.form-inspection-submit
+  width: 301px
+  height: 56px
+  background: url("/theme/images/button/free-consult-button.png") center center no-repeat
+  outline: none
+  border: none
+  font:
+    size: 16px
+    family: $openSansRegular
+  color: white
+  text-align: center
+  line-height: 56px
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+    width: 301px
+    height: 55px
+
+  &.activeDiagnostic
+    background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+    width: 300px
+    height: 50px
+
+.form-inspection-name, .form-inspection-phone, .form-inspection-doctor
+  &.error
+    input, .select
+      border: 1px solid red
+

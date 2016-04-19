@@ -1,0 +1,27 @@
+<h1>Загрузка прайсов</h1>
+<div style="margin: 10px 0; text-align: center">
+    <label for="direction">
+        Выберите направление
+        <select style="padding: 5px" name="directionId" id="directionId">
+            {% for item in directions %}
+                <option value="{{ item.getPk() }}">{{ item }}</option>
+            {% endfor %}
+        </select>
+    </label>
+    <span class="btn btn-file">
+        <i class="fa fa-upload"></i> Загрузить прайс
+        <input type="file" id="excelUploader" name="file" accept="application/vnd.ms-excel, application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"/>
+    </span>
+</div>
+<table class="width-100 table-striped">
+    <thead>
+        <tr>
+            <th>Категория</th>
+            <th>Название услуги</th>
+            <th>Цена</th>
+            <th>Действие</th>
+        </tr>
+    </thead>
+    <tbody id="parse-result"></tbody>
+</table>
+

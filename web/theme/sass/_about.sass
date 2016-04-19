@@ -1,0 +1,153 @@
+#index-about
+  background: url("/theme/images/background/about-index-background.jpg") center center no-repeat
+  background-size: cover
+  min-height: 700px
+  padding-top: 39px
+  padding-bottom: 40px
+
+.index-about-title
+  text-align: center
+  font-size: 43.91px
+  font-family: $pfHandbookProthin
+  span
+    color: black
+  .index-about-title-cyan
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+
+.index-about-subtitle
+  text-align: center
+  color: #000000
+  font-size: 18px
+  font-family: $pfHandbookProthin
+  margin-top: -6px
+
+  .index-about-subtitle-icon
+    background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+    width: 26px
+    height: 19px
+    margin: 0 auto
+    margin-top: 2px
+
+.index-about-wrapper
+  text-align: center
+
+  .col-sm-5-medical
+    width: 19%
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    cursor: pointer
+    margin-top: 43px
+
+    .index-about-medical
+      width: 132px
+      height: 132px
+      border-radius: 50%
+      background-color: #ffffff
+      border: 1px solid $lightCyan2
+      display: table
+      margin: 0 auto
+
+      .index-about-icon
+        display: table-cell
+        vertical-align: middle
+
+    .index-about-name
+      font:
+        family: $SegoeUIRegular
+        size: 16.01px
+      color: #000000
+      width: 80%
+      margin: 11px auto 0 auto
+      line-height: 21px
+
+
+.mfp-img
+  padding-top: 75px !important
+
+.mfp-close
+  top: 65px !important
+  right: -35px !important
+
+.index-about-mobile
+  display: none
+
+  .col-sm-5-medical
+    margin-top: 0
+
+  .index-about-icon
+    img
+      display: inline !important
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    left: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    right: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    margin-top: 10px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none

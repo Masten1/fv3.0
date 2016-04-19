@@ -1,0 +1,2427 @@
+#index-directions
+  padding-top: 18px
+
+.index-directions-title
+  @include font-decoration($pfHandbookProthin, 43.71px, black)
+  text-align: center
+
+  .index-directions-title-cyan
+    color: $lightCyan2
+    margin-right: 11px
+    font-family: $pfHandbookProMedium
+
+.index-directions-subtitle
+  @include font-decoration($pfHandbookProthin, 17.92px, black)
+  text-align: center
+  margin-top: -6px
+
+.index-directions-subtitle-media
+  display: none
+  @extend .index-directions-subtitle
+
+
+.index-directions-titleIcon
+  background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+  width: 25px
+  height: 19px
+  margin: 2px auto 44px auto
+
+.col-sm-3-medical
+  width: 28.6%
+  float: left
+
+.index-direction-title
+  text-align: right
+  position: relative
+  font-family: $SegoeUIRegular
+
+  div
+    font-weight: bold
+    font-size: 16px
+    color: black
+
+  span
+    font-size: 14px
+    color: black
+    display: block
+    width: 57%
+    float: right
+    font-family: $SegoeUIRegular
+
+
+  .index-directions-arrowIcon
+    background: url("/theme/images/icons/index_right_down_arrow_gray.png") center center no-repeat
+    width: 78px
+    height: 54px
+    position: absolute
+    right: -91px
+    top: 22px
+
+.index-directions-left-title
+  @include font-decoration($SegoeUISemiBold, 16px, $lightOrange)
+  text-align: right
+  margin: 40px 0 25px 0
+
+.index-directions-left-wrapper
+  border-right: 1px solid $lightCyan2
+  text-align: right
+  padding-right: 20px
+
+  .index-directions-left-cat
+    @include font-decoration($SegoeUIRegular, 17px, black)
+    &:not(:first-of-type)
+      margin-top: 22px
+
+  .index-directions-left-sub
+    @include font-decoration($SegoeUIRegular, 14px, $gray28)
+    position: relative
+    margin: 6px 0
+    padding-right: 13px
+    +transition(padding-right .4s)
+    p
+      margin: 0
+      cursor: pointer
+
+    .index-directions-left-subIcon
+      background: url("/theme/images/icons/left-arrow-blue-icon.png") center center no-repeat
+      width: 8px
+      height: 9px
+      position: absolute
+      right: -2px
+      top: 5px
+      +transition(right .4s)
+
+    &:hover
+      padding-right: 20px
+      +transition(padding-right .4s)
+      color: darken($gray3, 20%)
+
+      .index-directions-left-subIcon
+        right: 5px
+        +transition(right .4s)
+
+
+.index-directions-left-button
+  background: url("/theme/images/button/add-header-inner.png") center center no-repeat
+  width: 233px
+  height: 43px
+  text-align: center
+  line-height: 40px
+  cursor: pointer
+  float: right
+  margin-top: 22px
+  +transition(all 0.6s)
+
+  &:hover, &:active, &:focus
+    background: url("/theme/images/button/add-header-inner-active.png") center center no-repeat
+    width: 233px
+    height: 43px
+    a
+      color: white
+      text-decoration: none
+
+  &:active
+    background-color: darken($gray6, 10%)
+    a
+      color: white
+      text-decoration: none
+
+  a
+    @include font-decoration($SegoeUIRegular, 15px, white)
+    display: block
+    width: 100%
+
+    &:hover
+      text-decoration: none
+
+
+.index-directions-left-hidden-button
+  float: none
+  margin: 20px auto
+  @extend .index-directions-left-button
+
+.col-sm-9-medical
+  width: 698.5px
+  float: left
+
+.index-direction-image-wrapper
+  width: 100%
+  position: relative
+  padding-left: 69px
+  margin-top: -12px
+
+  .index-direction-image-round
+    background: url("/theme/images/icons/direct_arrow_inner.png") center center no-repeat
+    width: 363px
+    height: 181px
+    position: absolute
+
+  .index-direction-image-1
+    @include direction-image( 226px, 519px, 35%, 29%, 43%, 16px, 43%, 41%, 39.5%, 32.6% )
+    float: left
+    z-index: 500
+    margin-top: -98px
+    background: url("/theme/images/icons/man-direction-index.png") center center no-repeat
+    a
+      display: block
+      width: 200px
+      height: 500px
+      
+
+  .index-direction-image-2
+    @include direction-image( 188px, 511px, 37.5%, 27%, 52%, 16px, 31%, 34%, 29.5%, 28.6% )
+    float: right
+    margin-top: -91px
+    background: url("/theme/images/icons/wooman-direction-index.png") center center no-repeat
+    a
+      display: block
+      width: 200px
+      height: 500px
+
+  .index-direction-image-3
+    @include direction-image( 162px, 155px, 67%, 12%, 90%, 20px, 6%, 25%, 6%, 25% )
+    margin: 99px auto 0 auto
+    padding-left: 37px
+    a
+      display: block
+      width: 105px
+      height: 111px
+    &.active, &:hover
+      .direction-index-hover
+        width: 100px
+        height: 100px
+        border: 1px solid #c4c4c4
+        border-radius: 50%
+
+
+  .index-direction-image-4
+    @include direction-image( 122px, 140px, 74%, 6%, 102%, 16px, -2%, 16.5%, -2%, 16.9% )
+    margin: 26px auto 0 auto
+    padding-left: 23px
+    a
+      display: block
+      width: 100px
+      height: 100px
+    &.active, &:hover
+      .direction-index-hover
+        width: 100px
+        height: 100px
+        border: 1px solid #c4c4c4
+        border-radius: 50%
+
+  .index-direction-image-round
+    position: absolute
+    top: 47px
+    left: 212px
+
+
+#direction-change-block
+  section
+    display: none
+    @include transition(all 2s)
+
+    &.active
+      display: block
+      @include transition(all 2s)
+      .index-directions-left-title
+        -webkit-animation-name: slideInUp
+        -webkit-animation-duration: 1s
+        -webkit-animation-iteration-count: 1
+        -webkit-animation-timing-function: ease
+        -webkit-animation-fill-mode: forwards
+
+#direction-wrapper
+  min-height: 770px
+  margin-top: -1px
+  position: relative
+  background-size: cover
+
+.header-overlay
+  background: rgba(0, 0, 0, 0.6)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 11
+
+.header-direction-block
+  padding-top: 125px
+
+.header-direction-title
+  padding-left: 45px
+  @include font-decoration($pfHandbookProthin, 20.72px, $lightCyan)
+
+
+.header-direction-subTitle
+  margin-top: -40px
+  width: 60%
+  margin-bottom: 35px
+  font-family: $pfHandbookProMedium
+  line-height: 27px
+  color: white
+  span
+    font-size: 43.92px
+    margin: 0
+  p
+    &:first-of-type
+      &::first-letter
+        font-size: 80px
+
+.header-direction-subTitle-sub
+  text-transform: uppercase
+  margin: 0
+  display: inline-block !important
+  line-height: 60px
+  @include font-decoration($pfHandBookProBold, 43.92px, $lightCyan)
+
+.header-direction-description
+  width: 38%
+  line-height: 19px
+  @include font-decoration($pfHandbookProthin, 20.72px, white)
+
+  .header-direction-description-sub
+    @include font-decoration($pfHandbookProMedium, 20.72px, $lightCyan)
+    padding-left: 10px
+
+#add-complex-inspection, #add-complex-inspection-media
+  @include font-decoration($SegoeUIRegular, 16px, white)
+  cursor: pointer
+  text-align: center
+  background: url("/theme/images/icons/direction-add-button-icon.png") no-repeat
+  width: 301px
+  height: 55px
+  margin-top: 22px
+  line-height: 17px
+  padding: 5px 18px
+  +transition(all 0.6s)
+  &.activeInspection
+    background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+    width: 300px
+    height: 55px
+  &:hover
+    background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+    width: 301px
+    height: 55px
+
+
+#header-direction-more, #header-direction-more-media
+  @include font-decoration($segoeLight, 16px, white)
+  cursor: pointer
+  text-align: center
+  border: 1px solid white
+  width: 301px
+  height: 57px
+  float: left
+  margin-top: 15px
+  line-height: 45px
+  border-radius: 5px
+  position: relative
+  +transition(all 0.6s)
+  +user-select(none)
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    display: block
+    width: 100%
+    height: 57px
+    &:hover
+      text-decoration: none
+
+
+  .header-direction-moreIcon
+    position: absolute
+    bottom: -8px
+    left: 135px
+    background: url("/theme/images/icons/more-white-heart.png") center center no-repeat
+    width: 27px
+    height: 12px
+
+  &:hover, &:active
+    background: rgba(255, 255, 255, 0.7)
+    a
+      @include font-decoration($segoeLight, 16px, black)
+
+
+#direction-why
+  background: url("/theme/images/background/about-index-background.jpg") center center no-repeat
+  background-size: cover
+  min-height: 712px
+  padding-top: 39px
+  padding-bottom: 40px
+  a
+    display: block
+    width: 100%
+
+
+.direction-why-title
+  text-align: center
+  font-size: 43.91px
+  font-family: $pfHandbookProthin
+  line-height: 32px
+  span
+    color: black
+  .direction-why-title-cyan
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+
+.direction-why-title-icon
+  background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+  width: 26px
+  height: 19px
+  margin: 0 auto
+  margin-top: 10px
+
+.direction-why-wrapper
+  text-align: center
+  width: 970px
+  margin: 0 auto
+
+  .col-sm-4-medical
+    width: 22%
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    cursor: pointer
+    margin-top: 50px
+
+.direction-why-medical
+  width: 132px
+  height: 132px
+  border-radius: 50%
+  background-color: #ffffff
+  border: 1px solid $lightCyan2
+  display: table
+  margin: 0 auto
+
+  .direction-why-icon
+    display: table-cell
+    vertical-align: middle
+
+.direction-why-name
+  @include font-decoration($SegoeUIRegular, 16.02px, #000000)
+  width: 80%
+  margin: 11px auto 0 auto
+  line-height: 21px
+  p
+    margin: 0
+
+
+#diagnostic
+  padding-top: 40px
+
+.diagnostic-title
+  text-align: center
+  font-size: 43.71px
+  font-family: $pfHandbookProthin
+  span
+    color: black
+  .diagnostic-title-cyan
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+  p
+    margin: 0
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+    margin-top: -30px
+
+.diagnostic-subTitle
+  text-align: center
+  @include font-decoration($pfHandbookProthin, 17.92px, black)
+
+.diagnostic-subTitle-icon
+  background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+  width: 26px
+  height: 19px
+  margin: 0 auto
+  margin-top: -2px
+
+.diagnostic-wrapper
+  margin-top: 66px
+  padding: 0 10px
+
+.diagnostic-image-wrapper
+  width: 46%
+  float: left
+  max-height: 183px
+  padding-bottom: 37px
+  position: relative
+  &:first-of-type
+    margin-left: 40px
+    border-bottom: 1px solid $gray14
+
+    .active-dir-img
+      background: url("/theme/images/icons/diagnosticWhArrowUp.jpg") center center no-repeat
+      width: 14px
+      height: 11px
+      position: absolute
+      bottom: -4px
+      right: 29%
+      display: none
+
+  &:last-of-type
+    margin-right: 40px
+    border-bottom: 1px solid $gray14
+
+    .active-dir-img
+      background: url("/theme/images/icons/diagnosticWhArrowUp.jpg") center center no-repeat
+      width: 14px
+      height: 11px
+      position: absolute
+      bottom: -4px
+      left: 29%
+      display: none
+
+  +transition(all 1s)
+
+  img
+    &.diagnostic-hoverIcon
+      display: none
+
+  &.active
+    .active-select
+      display: block
+
+    .diagnostic-hoverIcon
+      display: inline-block
+
+    .diagnostic-icon
+      display: none
+
+    &:first-of-type
+      .active-dir-img
+        display: block
+
+    &:last-of-type
+      .active-dir-img
+        display: block
+
+  .diagnostic-section-1
+    width: 50%
+    float: right
+    padding-right: 50px
+    text-align: center
+    cursor: pointer
+
+  .diagnostic-section-2
+    width: 50%
+    padding-left: 50px
+    float: left
+    text-align: center
+    cursor: pointer
+
+.diagnostic-image-wrapper-mobile
+  width: 46%
+  float: left
+  max-height: 183px
+  padding-bottom: 37px
+  position: relative
+  &:first-of-type
+    margin-left: 40px
+    border-bottom: 1px solid $gray14
+
+    .active-dir-img-mobile
+      background: url("/theme/images/icons/diagnosticWhArrowUp.jpg") center center no-repeat
+      width: 14px
+      height: 11px
+      position: absolute
+      bottom: -4px
+      right: 29%
+      display: none
+
+  &:last-of-type
+    margin-right: 40px
+    border-bottom: 1px solid $gray14
+
+    .active-dir-img-mobile
+      background: url("/theme/images/icons/diagnosticWhArrowUp.jpg") center center no-repeat
+      width: 14px
+      height: 11px
+      position: absolute
+      bottom: -4px
+      left: 29%
+      display: none
+
+  +transition(all 1s)
+
+  img
+    &.diagnostic-hoverIcon-mobile
+      display: none
+
+  &.active-mobile
+
+    .diagnostic-hoverIcon-mobile
+      display: inline-block
+
+    .diagnostic-icon-mobile
+      display: none
+
+    &:first-of-type
+      .active-dir-img-mobile
+        display: block
+
+    &:last-of-type
+      .active-dir-img-mobile
+        display: block
+
+  .diagnostic-mobile-section-1
+    width: 50%
+    float: right
+    padding-right: 50px
+    text-align: center
+    cursor: pointer
+
+  .diagnostic-mobile-section-2
+    width: 50%
+    padding-left: 50px
+    float: left
+    text-align: center
+    cursor: pointer
+
+.diagnostic-image-title, .diagnostic-image-title-mobile
+  @include font-decoration($segoeLight, 16.02px, black)
+  text-transform: uppercase
+  margin: 33px 0 0 0
+
+.diagnostic-tabs
+  +transition(all 1s)
+
+  section
+    display: none
+    @include transition(all 2s)
+    overflow: hidden
+
+    &.activeFirstList
+      display: block
+      @include transition(all 2s)
+
+.diagnostic-tabs-mobile
+  +transition(all 1s)
+
+  section
+    display: none
+    @include transition(all 2s)
+    overflow: hidden
+
+    &.activeFirstList-mobile
+      display: block
+      @include transition(all 2s)
+
+.symptoms-title
+  text-align: center
+  font-size: 43.71px
+  font-family: $pfHandbookProthin
+  margin-bottom: 10px
+  span
+    color: black
+  p
+    margin: 0
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+    margin-top: -30px
+
+
+.symptoms-subTitle
+  margin-top: -27px
+  font-size: 43.71px
+  font-family: $pfHandbookProthin
+  color: black
+  text-align: center
+  line-height: 28px
+
+  .symptoms-subTitle-cyan
+    color: $lightCyan2
+    font-family: $pfHandbookProMedium
+
+.symptoms-subTitle-icon
+  margin-top: 3px
+  @extend .diagnostic-subTitle-icon
+
+
+.symptom-medical
+  width: 132px
+  height: 132px
+  border-radius: 50%
+  background-color: #ffffff
+  border: 1px solid #cdcdcd
+  display: table
+  margin: 0 auto
+
+
+  .symptom-icon
+    display: table-cell
+    vertical-align: middle
+    text-align: center
+
+.symptom-name
+  @include font-decoration($segoeLight, 16.03px, #000000)
+  width: 99%
+  margin: 11px auto 0 auto
+  line-height: 21px
+  text-align: center
+  p
+    margin: 0
+
+
+.symptoms-wrapper
+  width: 90%
+  margin: 0 auto
+  text-align: center
+
+  .col-sm-3-medical
+    width: 33%
+    display: inline-block
+    vertical-align: top
+    text-align: center
+    cursor: pointer
+    margin-top: 50px
+    float: none
+
+#diagnostic-symptoms
+  padding-bottom: 58px
+  margin-top: 70px
+
+  .symptoms-subTitle-icon
+    margin-top: 10px !important
+
+
+
+.symptom-arrow
+  width: 52%
+  margin: 0 auto
+  height: 1px
+  border: 1px solid $gray15
+  margin-top: 80px
+
+.symptom-add
+  @include font-decoration($segoeLight, 22px, $gray16)
+  text-align: center
+  margin-top: 16px
+  line-height: 18px
+  p
+    margin: 0
+
+.symptom-button-block
+  margin: 21px auto 0 auto
+  position: relative
+  width: 301px
+
+  .symptom-button
+    @include font-decoration($SegoeUIRegular, 16px, white)
+    cursor: pointer
+    text-align: center
+    background: url("/theme/images/icons/direction-add-button-icon.png") no-repeat
+    width: 301px
+    height: 55px
+    margin: 0 auto
+    line-height: 36px
+    padding: 5px 18px
+    +transition(all 0.6s)
+    &:hover
+      background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+      width: 301px
+      height: 55px
+
+    &.activeSymptom
+      background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+      width: 300px
+      height: 55px
+
+  .symptom-button-arrow
+    background: url("/theme/images/icons/red-arrow.png") no-repeat
+    width: 61px
+    height: 49px
+    position: absolute
+    top: -18px
+    left: -69px
+
+
+#direction-doctor
+  padding: 28px 0 63px 0
+  background-color: $lightBlue2
+  border-top: 1px solid $gray17
+  border-bottom: 1px solid $gray17
+
+.direction-doctor
+  padding-top: 14px
+
+.direction-doctor-title
+  text-align: center
+  line-height: 38px
+  @include font-decoration($pfHandbookProthin, 43.71px, black)
+
+.direction-doctor-sub
+  text-align: center
+  @include font-decoration($pfHandbookProMedium, 43.71px, $lightCyan2)
+  margin-top: -23px
+
+.direction-doctor-subIcon
+  margin-top: 15px !important
+  @extend .diagnostic-subTitle-icon
+
+
+.direction-doctor-figure
+  width: 310px
+  height: 459px
+  margin: 0 auto
+  text-align: center
+  border: 1px solid $gray15
+  img
+    max-width: 100%
+    height: auto
+
+.direction-doctor-text
+  text-align: left
+  @include font-decoration($pfAgoraSansProRegular, 16px, black)
+  line-height: 19px
+  p
+    &:first-of-type
+      font-size: 16.01px
+
+.direction-doctor-buttons
+  margin-top: 46px
+  margin-bottom: 22px
+
+.direction-doctor-question
+  width: 231px
+  height: 42px
+  float: left
+  border: 1px solid $gray4
+  line-height: 36px
+  text-align: left
+  padding-left: 14px
+  position: relative
+  border-radius: 4px
+  @include font-decoration($SegoeUIRegular, 14px, $gray4)
+  cursor: pointer
+  +transition(all 0.6s)
+  &:hover, &:active
+    background: $gray24
+    border: none
+    color: white
+    
+
+    .direction-doctor-questionIcon
+      background: url("/theme/images/icons/direction-anonim-hover-icon.png") center center no-repeat
+      width: 22px
+      height: 12px
+
+  .direction-doctor-questionIcon
+    position: absolute
+    background: url("/theme/images/icons/direction-anonim-icon.png") center center no-repeat
+    width: 22px
+    height: 12px
+    top: 13px
+    right: 10px
+
+.direction-doctor-add
+  width: 210px
+  height: 42px
+  float: left
+  background: url("/theme/images/icons/direction-add-button.png") center center no-repeat
+  line-height: 34px
+  text-align: center
+  @include font-decoration($SegoeUIRegular, 14px, white)
+  cursor: pointer
+  margin-left: 11px
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/icons/direction-add-hover-button.png") center center no-repeat
+    width: 210px
+    height: 42px
+
+  &.activeDoctorAdd
+    background: url("/theme/images/icons/direction-add-active-button.png") center center no-repeat
+    width: 210px
+    height: 37px
+
+
+.direction-doctor-show-resume
+  width: 210px
+  height: 42px
+  float: left
+  border: 1px solid $gray4
+  line-height: 37px
+  text-align: left
+  padding-left: 20px
+  position: relative
+  border-radius: 4px
+  @include font-decoration($SegoeUIRegular, 14px, $gray4)
+  cursor: pointer
+  margin-top: 18px
+  margin-left: 2px
+  &:hover, &:active
+    background: $gray24
+    border: none
+    color: white
+
+    .direction-doctor-show-resumeIcon
+      background: url("/theme/images/icons/file_direction_hover_icon.png") center center no-repeat
+      width: 13px
+      height: 16px
+
+  .direction-doctor-show-resumeIcon
+    position: absolute
+    background: url("/theme/images/icons/file_direction_icon.png") center center no-repeat
+    width: 13px
+    height: 16px
+    top: 12px
+    right: 18px
+
+.direction-doctor-name
+  @include font-decoration($segoeLight, 16.02px, black)
+  text-align: left
+  span
+    text-transform: uppercase
+
+.direction-doctor-resume
+  @include font-decoration($SegoeUISemiBold, 12px, $lightOrange)
+  text-align: left
+  line-height: 14px
+  margin-top: 7px
+
+.direction-doctor-experience
+  @include font-decoration($openSansRegular, 11.98px, $gray9)
+  text-align: left
+  margin-top: 17px
+
+.col-sm-4-doctor
+  width: 29%
+  float: left
+  margin-top: 19px
+
+.col-sm-8-doctor
+  width: 71%
+  float: left
+  padding-left: 21px
+
+
+.diagnostic
+  &.activeFirstList
+    .diagnostic-sub-tabs
+      width: 91.8%
+      margin-left: 41px
+      margin-top: 25px
+      ul
+        margin: 0
+        padding: 0
+        border-bottom: 1px solid $lightBlue4
+        text-align: center
+        li
+          height: 43px
+          display: inline-block
+          list-style: none
+          padding-left: 10px
+          padding-right: 10px
+          cursor: pointer
+          margin-bottom: -2px
+          padding-top: 6px
+          &:hover
+            a
+              border-bottom: none
+              color: $gray18
+
+          &.active
+            background-color: $lightBlue3
+            border-bottom: 1px solid $lightBlue3
+            border-top: 1px solid $lightBlue4
+            border-right: 1px solid $lightBlue4
+            border-left: 1px solid $lightBlue4
+
+            a
+              @include font-decoration($pfAgoraSansProRegular, 13.93px, black)
+
+            &:hover
+              text-decoration: none
+              color: black
+
+          a
+            @include font-decoration($pfAgoraSansProRegular, 13.93px, $gray18)
+            text-transform: uppercase
+            &:hover
+              text-decoration: none
+              color: $gray18
+
+    .diagnostic-tabs-sub-content
+      div
+        display: none
+        &.active
+          display: block
+          background-color: $lightBlue3
+          width: 91.8%
+          margin-left: 41px
+          @include font-decoration($segoeLight, 14px, black)
+          border-right: 1px solid $lightBlue4
+          border-left: 1px solid $lightBlue4
+          border-bottom: 1px solid $lightBlue4
+          float: left
+          padding: 12px 25px 37px 12px
+          text-align: left
+          line-height: 25px
+
+          p
+            margin: 0
+
+          div
+            display: block
+
+.therapy
+  &.activeFirstList
+    .diagnostic-sub-tabs-2
+      width: 91.8%
+      margin-left: 41px
+      margin-top: 25px
+      ul
+        margin: 0
+        padding: 0
+        border-bottom: 1px solid $lightBlue4
+        text-align: center
+        li
+          height: 43px
+          display: inline-block
+          list-style: none
+          padding-left: 10px
+          padding-right: 10px
+          cursor: pointer
+          margin-bottom: -2px
+          padding-top: 6px
+          &:hover
+
+            a
+              border-bottom: none
+              color: $gray18
+
+          &.active
+            background-color: $lightBlue3
+            border-bottom: 1px solid $lightBlue3
+            border-top: 1px solid $lightBlue4
+            border-right: 1px solid $lightBlue4
+            border-left: 1px solid $lightBlue4
+
+            a
+              @include font-decoration($pfAgoraSansProRegular, 13.93px, black)
+
+            &:hover
+              text-decoration: none
+              color: black
+
+          a
+            @include font-decoration($pfAgoraSansProRegular, 13.93px, $gray18)
+            text-transform: uppercase
+            &:hover
+              text-decoration: none
+              color: $gray18
+
+    .diagnostic-tabs-sub-content-2
+      div
+        display: none
+        &.active
+          display: block
+          background-color: $lightBlue3
+          width: 91.8%
+          margin-left: 41px
+          @include font-decoration($segoeLight, 14px, black)
+          border-right: 1px solid $lightBlue4
+          border-left: 1px solid $lightBlue4
+          border-bottom: 1px solid $lightBlue4
+          float: left
+          padding: 12px 25px 37px 12px
+          text-align: left
+          line-height: 25px
+
+          p
+            margin: 0
+
+          div
+            display: block
+
+
+.diagnostic-button-block
+  margin: 37px auto 0 auto
+  position: relative
+  width: 301px
+
+  .diagnostic-button-add
+    @include font-decoration($SegoeUIRegular, 16px, white)
+    cursor: pointer
+    text-align: center
+    background: url("/theme/images/icons/direction-add-button-icon.png") no-repeat
+    width: 301px
+    height: 55px
+    margin: 0 auto
+    line-height: 36px
+    padding: 5px 18px
+    +transition(all 0.6s)
+    &:hover
+      background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+      width: 301px
+      height: 55px
+
+    &.activeDiagnostic
+      background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+      width: 300px
+      height: 50px
+
+  .diagnostic-button-add-arrow
+    background: url("/theme/images/icons/red-arrow.png") no-repeat
+    width: 61px
+    height: 49px
+    position: absolute
+    top: -18px
+    left: -69px
+
+#direction-price
+  padding-top: 54px
+  padding-bottom: 20px
+
+.direction-price-title
+  text-align: center
+  @include font-decoration($pfHandbookProthin, 43.71px, black)
+  .direction-price-title-cyan
+    @include font-decoration($pfHandbookProMedium, 43.71px, $lightCyan2)
+
+.direction-price-sub
+  text-align: center
+  @include font-decoration($pfHandbookProthin, 17.92px, black)
+  margin-top: 5px
+
+.direction-price-subIcon
+  margin-top: 14px
+  @extend .diagnostic-subTitle-icon
+
+
+.direction-price-right
+  width: 55.3%
+  float: left
+  border: 1px solid $lightBlue4
+  background-color: $lightBlue3
+  margin-left: -1px
+  overflow-y: auto
+  min-height: 244px
+
+  section
+    display: none
+    &.active-content-price
+      display: block
+
+    ul
+      padding: 0
+      margin: 0
+      list-style: none
+
+      .price-list-li
+        text-align: left
+        margin: 0
+        position: relative
+        width: 93%
+        float: left
+        padding: 9px 0
+        padding-left: 30px
+
+        .definition
+          @include font-decoration($pfAgoraSansProRegular, 14px, black)
+          max-width: 70%
+          float: left
+          line-height: 15px
+
+        .definition-border
+          width: 10%
+          float: left
+          border-bottom: 1px dotted black
+          line-height: 21px
+          min-height: 14px
+          margin-left: 7px
+
+        .price-valute
+          position: relative
+          width: 20%
+          @include font-decoration($pfAgoraSansProRegular, 14px, $lightOrange)
+          text-align: left
+          float: right
+          span
+            vertical-align: 6px
+            font-size: 8px
+
+.direction-price-right::-webkit-scrollbar
+  width: 15px
+  height: 10%
+  border: 1px solid $lightOrange
+  border-radius: 5px
+
+
+.direction-price-right::-webkit-scrollbar-thumb
+  background: $lightOrange
+
+.direction-price-right::-webkit-scrollbar-track
+  background: #FCC7BD
+
+.direction-price
+  width: 81.7%
+  margin: 0 auto
+  padding-top: 41px
+
+.direction-price-left
+  width: 42.8%
+  float: left
+
+  .direction-price-left-item
+    cursor: pointer
+    padding-left: 18px
+    padding-right: 5px
+    +transition(all 0.5s)
+    section
+      padding: 10px 0
+      display: table
+
+      span
+        margin: 0
+        display: table-cell
+        vertical-align: middle
+        @include font-decoration($pfAgoraSansProRegular, 14px, #727272)
+
+      .price-list-icon
+        display: none
+
+    &.active-price
+      background-color: $lightBlue3
+      border-top: 1px solid $lightBlue4
+      border-left: 1px solid $lightBlue4
+      border-bottom: 1px solid $lightBlue4
+      border-right: 1px solid $lightBlue3
+      position: relative
+      section
+        span
+          @include font-decoration($pfAgoraSansProRegular, 14px, black)
+          font-weight: bold
+
+
+        .price-list-icon
+          display: inline-block
+          background: url("/theme/images/icons/right-blue-icon.png") center center no-repeat
+          margin-left: 9px
+          width: 15px
+          height: 15px
+    &:hover
+      span
+        color: black
+
+#direction-special
+  padding-bottom: 25px
+
+.direction-special-title
+  text-align: center
+  @include font-decoration($pfHandbookProthin, 43.76px, black)
+  .direction-special-title-cyan
+    @include font-decoration($pfHandbookProMedium, 43.76px, $lightCyan2)
+
+.direction-special-sub
+  text-align: center
+  @include font-decoration($pfHandbookProthin, 17.94px, black)
+  margin-top: -7px
+
+.direction-special-subIcon
+  margin-top: 7px
+  @extend .diagnostic-subTitle-icon
+
+#slick-special-wrapper
+  width: 1100px
+  margin: 0 auto
+  padding-left: 91px
+  padding-top: 19px
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    left: 0
+    top: 142px
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: white
+    font-weight: lighter
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    right: 2px
+    top: 142px
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: white
+    font-weight: lighter
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    padding: 0
+    margin-top: 30px
+
+    li
+      margin-right: 16px
+      display: inline-block
+      &:last-of-type
+        margin-right: 0
+      button
+        width: 25px
+        height: 25px
+        border: 1px solid $gray10
+        +user-select(none)
+        outline: none
+        color: $gray11
+        border-radius: 50%
+        background-color: white
+        text-align: center
+        padding: 0
+        padding-bottom: 1px
+        +transition(all 0.6s)
+        font:
+          size: 16px
+          family: $segoeLight
+
+        &:hover
+          background-color: lighten($lightCyan2, 20%)
+          color: white
+
+    .slick-active
+      button
+        width: 25px
+        height: 25px
+        border: none
+        background-color: $lightCyan2
+        +user-select(none)
+        outline: none
+        color: white
+        border-radius: 50%
+        text-align: center
+        padding: 0
+        padding-bottom: 1px
+        font:
+          size: 16px
+          family: $segoeLight
+
+.slick-special-image
+  width: 24.58%
+  height: 248px
+  float: left
+  margin-top: 29px
+  img
+    max-width: 100%
+    height: auto
+
+.slick-special-content
+  width: 75.42%
+  float: left
+  padding: 22px 50px 0 37px
+
+.special-content-title
+  @include font-decoration($SegoeUIRegular, 16.01px, black)
+  text-align: left
+
+.special-content-subBlock
+  ul
+    list-style: none
+    margin: 24px 0
+    padding-left: 3px
+
+    li
+      background: url("/theme/images/icons/right-blue-icon-price.png") left center no-repeat
+      @include font-decoration($SegoeUIRegular, 13px, black)
+      text-align: left
+      padding-left: 19px
+      margin: 9px 0
+      display: list-item
+
+
+.special-content-info-price
+  @include font-decoration($SegoeUISemiBold, 14px, black)
+  text-align: left
+  margin-top: -5px
+  p
+    margin: 0
+    display: inline-block
+
+  .special-content-info-priceInt
+    color: $lightOrange
+
+  .special-content-info-priceValute
+    color: $lightOrange
+    font-size: 8px
+    line-height: 11px
+    vertical-align: top
+
+.special-content-info-subPrice
+  @include font-decoration($SegoeUISemiBold, 14px, black)
+  text-align: left
+  margin-top: 7px
+  p
+    margin: 0
+    display: inline-block
+
+  .special-content-info-subPriceInt
+    color: $lightOrange
+
+    .special-content-info-subPriceValute
+      color: $lightOrange
+      font-size: 8px
+      line-height: 11px
+      vertical-align: top
+
+  .special-content-info-subPriceSum
+    color: $lightOrange
+
+    .special-content-info-subPriceValute
+      color: $lightOrange
+      font-size: 8px
+      line-height: 11px
+      vertical-align: top
+
+.special-content-get-discount
+  width: 210px
+  height: 42px
+  float: left
+  background: url("/theme/images/icons/direction-add-button.png") center center no-repeat
+  line-height: 34px
+  text-align: center
+  @include font-decoration($SegoeUIRegular, 14px, white)
+  cursor: pointer
+  margin-left: 2px
+  margin-top: 19px
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/icons/direction-add-hover-button.png") center center no-repeat
+    width: 210px
+    height: 42px
+
+  &.activeDiscountAdd
+    background: url("/theme/images/icons/direction-add-active-button.png") center center no-repeat
+    width: 210px
+    height: 37px
+
+#direction-howTherapies
+  margin-top: -124px
+  padding-top: 130px
+
+.direction-icon-wrapper
+  background: url("/theme/images/background/direction-how-therapy2.png") center center no-repeat
+  height: 562px
+  margin-top: -249px
+  padding-top: 239px
+
+
+.direction-icon-container
+  position: relative
+  height: 310px
+  width: 1150px
+  margin: 0 auto
+
+  .how-icon-1
+    @include icon-how-direction(10px, -35px)
+
+  .how-icon-2
+    @include icon-how-direction(71px, 155px)
+
+  .how-icon-3
+    @include icon-how-direction(113px, 364px)
+
+  .how-icon-4
+    @include icon-how-direction(114px, 588px)
+
+  .how-icon-5
+    @include icon-how-direction(81px, 798px)
+
+  .how-icon-6
+    @include icon-how-direction(18px, 979px)
+
+.how-therapies-button
+  @include font-decoration($SegoeUIRegular, 12px, white)
+  cursor: pointer
+  text-align: center
+  background: url("/theme/images/button/how-therapies-button.png") no-repeat
+  width: 121px
+  height: 39px
+  margin: 0 auto
+  line-height: 36px
+  margin-top: 10px
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/button/how-therapies-hover-button.png") no-repeat
+    width: 121px
+    height: 39px
+
+  &.activeTherapies
+    background: url("/theme/images/button/how-therapies-active-button.png") no-repeat
+    width: 121px
+    height: 39px
+
+.howTherapiesIcon
+  display: none !important
+
+
+#direction-questions
+  padding-top: 66px
+  margin-bottom: 85px
+
+.block-faq-short
+  width: 87%
+  margin: 0 auto
+  padding: 22px 0
+
+  ul
+    list-style: none
+    padding: 0
+
+    li
+      margin: 10px 0
+      .block-faq-open
+        @include font-decoration($pfDinDispayPro, 18px, black)
+        padding: 2px 30px 13px 16px
+        position: relative
+        background-color: $lightBlue5
+        cursor: pointer
+        margin-bottom: 10px
+        +transition(all 0.6s)
+        &:hover
+          background-color: darken($lightBlue5, 10%)
+
+        p
+          margin: 0
+
+        &.prevDiv
+          background-color: $lightBlue3
+
+        .faq-show-more
+          background: url("/theme/images/icons/faq-arrow-up.png") center center no-repeat
+          width: 13px
+          height: 14px
+          top: 10px
+          right: 18px
+          position: absolute
+
+          &.prev
+            background: url("/theme/images/icons/faq-arrow-down.png") center center no-repeat
+            width: 13px
+            height: 14px
+            top: 10px
+            right: 18px
+
+      .block-faq-hidden
+        display: none
+        @include font-decoration($SegoeUIRegular, 15px, black)
+        text-align: left
+        padding: 16px 5px 16px 16px
+        line-height: 20px
+        p
+          margin: 0
+
+
+#mySliderTabs2
+  ul
+    li
+      &.selected
+        a
+          color: black
+
+        &:hover
+          text-decoration: none
+          color: black
+
+.hover-wrapper-add
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: 9999
+  background: rgba(24, 22, 20, 0.9)
+  display: none
+
+  .hover-add-container
+    width: 100%
+    margin-top: 8%
+
+    .hover-add-container-left
+      padding-top: 73px
+      width: 63%
+      float: left
+      @include font-decoration($pfHandbookProMedium, 47.51px, white)
+      text-align: left
+      p
+        margin: 0
+        &:last-of-type
+          font-size: 45.51px
+          margin-top: -25px
+          line-height: 50px
+
+      .hover-add-container-left-cyan
+        @include font-decoration($pfHandBookProBold, 55.57px, $lightCyan)
+        margin-top: -7px
+
+    .hover-add-container-right
+      width: 37%
+      float: left
+      background: white
+      border: none
+      border-radius: 7px
+      padding-top: 15px
+
+      .hover-add-container-right-title
+        text-transform: uppercase
+        @include font-decoration($openSansRegular, 20.04px, #1b0600)
+        text-align: center
+
+        .hover-add-right-cyan
+          @include font-decoration($openSansRegular, 45.05px, $lightCyan2)
+          margin-left: 5px
+
+      .hover-add-container-right-subTitle
+        text-transform: uppercase
+        @include font-decoration($openSansRegular, 14.51px, #1b0600)
+        text-align: center
+        margin-top: -9px
+
+#form-hover-add
+  padding-top: 27px
+  width: 81%
+  margin: 0 auto
+  padding-bottom: 28px
+
+  .form-hover-add-name
+    input
+      +input-placeholder
+        background: url("/theme/images/icons/input-star.png") 35% center no-repeat
+
+  .form-hover-add-number
+    input
+      +input-placeholder
+        background: url("/theme/images/icons/input-star.png") 65% center no-repeat
+
+
+  .form-hover-add-name
+    margin-bottom: 16px
+    input
+      +consult-input(url("/theme/images/icons/form-index-user.png") 14px no-repeat)
+
+  .form-hover-add-number
+    margin-bottom: 16px
+    input
+      +consult-input(url("/theme/images/icons/form-index-phone.png") 14px no-repeat)
+
+  .form-hover-add-anonymous
+    background: url("/theme/images/icons/form-index-mask.png") 14px no-repeat
+    width: 100%
+    height: 29px
+    font:
+      family: $openSansRegular
+      size: 14px
+    color: $gray6
+    padding-left: 54px
+    padding-top: 3px
+    margin-bottom: 5px
+    margin-top: 30px
+
+  .marLeft-3
+    text-align: center
+
+  .form-form-hover-add-submit
+    width: 301px
+    height: 56px
+    background: url("/theme/images/button/free-consult-button.png") center center no-repeat
+    outline: none
+    border: none
+    font:
+      size: 16px
+      family: $openSansRegular
+    color: white
+    text-align: center
+    line-height: 56px
+    &:active, &:hover
+      background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+      width: 301px
+      height: 55px
+
+  .form-complex-discount-name, .form-complex-discount-phone
+    &.error
+      input
+        border: 1px solid red
+
+.diagnostic-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-hover-add-diagnostic
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 36% center no-repeat !important
+
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 59% center no-repeat !important
+
+    .form-sign-direction-name, .form-sign-direction-phone
+      &.error
+        input
+          border: 1px solid red
+    @extend #form-hover-add
+
+
+.symptoms-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-hover-add-symptoms
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 36% center no-repeat !important
+
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 59% center no-repeat !important
+
+
+    .form-sign-direction-name, .form-sign-direction-phone
+      &.error
+        input
+          border: 1px solid red
+
+    @extend #form-hover-add
+
+.doctor-add-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-hover-add-doctor
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 36% center no-repeat !important
+
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 59% center no-repeat !important
+
+
+    .form-sign-direction-name, .form-sign-direction-phone
+      &.error
+        input
+          border: 1px solid red
+
+    @extend #form-hover-add
+
+.discount-add-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-discount-add-doctor
+    .form-direction-discount-offer-name, .form-direction-discount-offer-phone
+      &.error
+        input
+          border: 1px solid red
+    @extend #form-hover-add
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 35% center no-repeat !important
+
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 38% center no-repeat !important
+
+.question-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-hover-add-question
+    @extend #form-hover-add
+    .form-free-consult-anonymous
+      background: url("/theme/images/icons/form-index-mask.png") 14px no-repeat
+      width: 100%
+      height: 29px
+      font:
+        family: $openSansRegular
+        size: 14px
+      color: $gray25
+      padding-left: 54px
+      padding-top: 3px
+      margin-bottom: 5px
+      font-weight: bolder
+
+
+    .form-hover-add-mail
+      margin-bottom: 16px
+      input
+        +consult-input(url("/theme/images/icons/form-index-message.png") 14px no-repeat)
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 28% center no-repeat !important
+
+    .form-hover-add-text
+      textarea
+        width: 100%
+        border-radius: 3px
+        border: 1px solid $lightBlue6
+        padding-left: 11px
+        min-height: 115px
+        padding-top: 10px
+        font:
+          family: $openSansRegular
+          size: 14px
+        color: $black1
+        +consult-input(url("/theme/images/icons/form-message.png") 14px 13px no-repeat)
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 49% center no-repeat !important
+
+
+    .form-hover-question-dir-name, .form-hover-question-dir-email, .form-hover-question-dir-question
+      &.error
+        input, textarea
+          border: 1px solid red
+
+.doctor-hover-wrapper
+  position: fixed
+  top: 0
+  left: 0
+  height: 100%
+  width: 100%
+  z-index: 9999
+  background: rgba(24, 22, 20, 0.9)
+  display: none
+
+.doctor-hover-block
+  width: 100%
+  background: white
+  border-radius: 4px
+  margin-top: 5%
+  padding-top: 14px
+  padding-left: 37px
+  height: 500px
+
+
+.hover-sm-8-doctor::-webkit-scrollbar
+  width: 15px
+  height: 5px
+  border: 1px solid $lightOrange
+  border-radius: 5px
+
+.hover-sm-8-doctor::-webkit-scrollbar-thumb
+  background: $lightOrange
+
+.hover-sm-8-doctor::-webkit-scrollbar-track
+  background: #FCC7BD
+
+.hover-sm-8-doctor
+  padding-left: 25px
+  padding-top: 13px
+  height: 470px
+  overflow: hidden
+  overflow-y: auto
+
+  .direction-doctor-resume
+    margin-top: 13px
+
+  .direction-doctor-text
+    margin-top: 10px
+    padding-right: 10px
+
+
+.block-direction-short
+  width: 100%
+  margin: 0 auto
+  padding: 22px 0
+
+  ul
+    list-style: none
+    padding: 0
+
+    li
+      margin: 10px 0
+      .block-index-direction-open
+        @include font-decoration($pfDinDispayPro, 20px, black)
+        padding: 10px 40px 10px 16px
+        position: relative
+        background-color: $lightBlue5
+        cursor: pointer
+        margin-bottom: 10px
+        +transition(all 0.6s)
+        &:hover
+          background-color: darken($lightBlue5, 10%)
+
+        p
+          margin: 0
+
+        &.prevDiv
+          background-color: $lightBlue3
+
+        .direction-show-more
+          background: url("/theme/images/icons/faq-arrow-up.png") center center no-repeat
+          width: 13px
+          height: 14px
+          top: 18px
+          right: 18px
+          position: absolute
+
+          &.prev
+            background: url("/theme/images/icons/faq-arrow-down.png") center center no-repeat
+            width: 13px
+            height: 14px
+            top: 18px
+            right: 18px
+
+      .block-index-direction-hidden
+        display: none
+        @include font-decoration($segoeLight, 14px, $gray9)
+        text-align: left
+        padding: 16px 5px 16px 16px
+        line-height: 19px
+
+        p
+          margin: 0
+
+.index-directions-left-sub-wrapper
+  @extend .doctor-hover-wrapper
+
+.index-directions-left-sub-description
+  padding: 20px
+  text-align: justify
+  height: 400px
+  overflow: hidden
+  overflow-y: auto
+  margin-top: 7%
+  width: 100%
+  background: white
+  border-radius: 4px
+
+.index-directions-hidden-sub-wrapper
+  .container-medical
+    z-index: 9999
+  @extend .doctor-hover-wrapper
+
+.index-directions-hidden-sub-description
+  padding: 20px !important
+  text-align: justify
+  height: 400px
+  overflow: hidden
+  overflow-y: auto
+  margin-top: 80px
+  width: 100%
+  background: white
+  border-radius: 4px
+  color: black
+  font-size: 15px
+
+.index-direction-remove
+  position: absolute !important
+  top: 3% !important
+  color: white
+  font-size: 30px
+  right: 4%
+  cursor: pointer
+
+.index-directions-left-sub-description::-webkit-scrollbar
+  width: 5px
+  height: 5px
+  border: 1px solid $lightOrange
+  border-radius: 5px
+
+.index-directions-left-sub-description::-webkit-scrollbar-thumb
+  background: $lightOrange
+
+.index-directions-left-sub-description::-webkit-scrollbar-track
+  background: #FCC7BD
+
+.index-directions-hidden-sub-description::-webkit-scrollbar
+  width: 15px
+  height: 5px
+  border: 1px solid $lightOrange
+  border-radius: 5px
+
+.index-directions-hidden-sub-description::-webkit-scrollbar-thumb
+  background: $lightOrange
+
+.index-directions-hidden-sub-description::-webkit-scrollbar-track
+  background: #FCC7BD
+
+.index-direction-title-media
+  @include font-decoration($pfHandBookProBold, 35px, $lightCyan2)
+  text-align: center
+
+#index-direction-media
+  padding: 30px 35px
+  display: none
+  width: 100%
+
+.index-directions-hidden-cat
+  @include font-decoration($SegoeUIRegular, 24px, $gray3)
+  margin: 20px 0
+  padding-right: 13px
+  p
+    margin: 0
+
+.index-directions-hidden-sub
+  @include font-decoration($SegoeUIRegular, 16px, $gray3)
+  position: relative
+  padding-left: 30px
+  margin: 10px 0
+  +transition(padding-left .4s)
+  cursor: pointer
+  &:hover
+    padding-left: 37px
+    color: darken($gray3, 20%)
+
+    .index-directions-left-hidden-subIcon
+      left: 7px
+      +transition(left .4s)
+
+  .index-directions-left-hidden-subIcon
+    background: url("/theme/images/icons/right-blue-icon.png") center center no-repeat
+    width: 15px
+    height: 15px
+    position: absolute
+    left: 2px
+    top: 4px
+    +transition(left .4s)
+
+
+#direction-price-media
+  display: none
+
+  .price-direction-short
+    width: 100%
+    margin: 0 auto
+    padding: 22px 0
+
+    ul
+      list-style: none
+      padding: 0
+
+      li
+        margin: 10px 0
+        .block-price-direction-open
+          @include font-decoration($pfDinDispayPro, 20px, black)
+          padding: 10px 10px 10px 16px
+          position: relative
+          background-color: $lightBlue5
+          cursor: pointer
+          margin-bottom: 10px
+          +transition(all 0.6s)
+          &:hover
+            background-color: darken($lightBlue5, 10%)
+
+          p
+            margin: 0
+            padding-right: 30px
+
+          &.prevDivDirection
+            background-color: $lightBlue3
+
+          .direction-price-show-more
+            background: url("/theme/images/icons/faq-arrow-up.png") center center no-repeat
+            width: 13px
+            height: 14px
+            top: 18px
+            right: 18px
+            position: absolute
+
+            &.prevDir
+              background: url("/theme/images/icons/faq-arrow-down.png") center center no-repeat
+              width: 13px
+              height: 14px
+              top: 18px
+              right: 18px
+
+        .block-price-direction-hidden
+          display: none
+          @include font-decoration($segoeLight, 14px, $gray9)
+          text-align: left
+          padding: 16px 5px 16px 16px
+          line-height: 19px
+
+          p
+            margin: 0
+
+.price-directions-hidden-cat
+  @include font-decoration($SegoeUIRegular, 24px, $gray3)
+  position: relative
+  p
+    margin: 0
+    display: block
+    width: 70%
+    float: left
+    padding-right: 5px
+    line-height: 28px
+
+  .price-valute-hidden
+    width: 30%
+    float: left
+    padding-left: 5px
+    position: relative
+    @include font-decoration($pfAgoraSansProRegular, 18px, $lightOrange)
+    text-align: right
+    span
+      vertical-align: 6px
+      font-size: 14px
+
+  .price-directions-left-hidden-subIcon
+    background: url("/theme/images/icons/right-blue-icon.png") center center no-repeat
+    width: 15px
+    height: 15px
+    position: absolute
+    left: -6%
+    top: 6px
+
+.price-directions-hidden-sub
+  @include font-decoration($SegoeUIRegular, 16px, $gray3)
+  position: relative
+  padding-left: 30px
+  margin: 20px 0
+
+.hidden-lang
+  display: none
+
+.direction-why-no-index-mobile
+  display: none
+
+  .col-sm-4-medical
+    margin-top: 0
+
+  .direction-why-icon
+    img
+      display: inline !important
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    left: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    right: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    margin-top: 10px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none
+
+.symptoms-wrapper-mobile
+  display: none
+
+  .col-sm-3-medical
+    margin-top: 0
+    float: left
+
+  .symptom-icon
+    img
+      display: initial !important
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    left: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    right: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    margin-top: 10px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none
+
+.ui-slider-tabs-list-wrapper.bottom .ui-slider-right-arrow
+  border-top-right-radius: 0
+  border-bottom-right-radius: 4px
+
+
+.ui-slider-tabs-indicator-container
+  position: absolute
+  top: -75px
+  left: 0
+  width: 100%
+  text-align: center
+
+
+.ui-slider-tabs-indicator
+  margin-right: 10px
+  display: inline-block
+  background: $gray26
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  border: none
+  +user-select(none)
+  outline: none
+  font-size: 0
+  cursor: pointer
+  &:last-of-type
+    margin-right: 0
+
+  &.selected
+    background: $lightCyan2
+
+.media-header-direction
+  display: none
+
+.mySliderTabsMobile
+  width: 100%
+  margin: 0 auto
+  padding: 22px 0
+
+  ul
+    list-style: none
+    padding: 0
+
+    li
+      margin: 10px 0
+      .mobile-cat-tabs-show
+        @include font-decoration($pfDinDispayPro, 20px, black)
+        padding: 10px 40px 10px 16px
+        position: relative
+        background-color: $lightBlue5
+        cursor: pointer
+        margin-bottom: 10px
+        +transition(all 0.6s)
+        &:hover
+          background-color: darken($lightBlue5, 10%)
+
+        p
+          margin: 0
+
+        &.prevDiv
+          background-color: $lightBlue3
+
+        .mobile-cat-tabs-arrow
+          background: url("/theme/images/icons/faq-arrow-up.png") center center no-repeat
+          width: 13px
+          height: 14px
+          top: 18px
+          right: 18px
+          position: absolute
+
+          &.prev
+            background: url("/theme/images/icons/faq-arrow-down.png") center center no-repeat
+            width: 13px
+            height: 14px
+            top: 18px
+            right: 18px
+
+      .mobile-description-tabs-hidden
+        display: none
+        @include font-decoration($segoeLight, 14px, $gray9)
+        text-align: left
+        padding: 16px 5px 16px 16px
+        line-height: 19px
+
+        p
+          margin: 0
+
+.diagnostic-mobile-tabs
+  display: none
+  margin: 20px 0
+
+.diagnostic-mobile-section-1, .diagnostic-mobile-section-2
+  float: none !important
+  width: 100% !important
+  padding: 0 !important
+
+.active-select
+  display: none
+
+.active-select-1
+  position: absolute
+  bottom: 37%
+  right: 53%
+  text-align: right
+
+  span
+    background: url("/theme/images/icons/index_left_down_arrow_gray.png") center center no-repeat
+    width: 78px
+    height: 54px
+    position: absolute
+    left: -96%
+    top: 38%
+
+  p
+    font-size: 14px
+    color: black
+    font-family: $SegoeUIRegular
+    font-weight: bold
+
+.active-select-2
+  position: absolute
+  right: 19%
+  bottom: 37%
+  span
+    background: url("/theme/images/icons/index_right_down_arrow_gray.png") center center no-repeat
+    width: 78px
+    height: 54px
+    position: absolute
+    right: -91px
+    top: 38%
+
+  p
+    font-size: 14px
+    color: black
+    font-family: $SegoeUIRegular
+    font-weight: bold
+
+.direction-doctor-figure-media
+  display: none
+  margin: 20px 0
+  border: none
+
+.direction-doctor-name-media
+  display: none
+
+.direction-doctor-resume-media
+  display: none
+
+.direction-doctor-experience-media
+  display: none
+
+.index-directions-left-title-media
+  display: none
+  @include font-decoration($SegoeUISemiBold, 16px, $lightOrange)
+  text-align: right
+  margin: 40px 0 25px 0

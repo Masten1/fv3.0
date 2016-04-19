@@ -1,0 +1,10 @@
+modules:
+  pages:
+    name: Страницы
+    entity: StaticPage
+    form:
+      options:
+        exclude: [ isSystem ]
+
+  dictionary:
+    entity: DictionaryLocaled

@@ -1,0 +1,142 @@
+#index-why-visit
+  background: white
+  padding: 56px 0 40px 0
+
+.why-visit-title
+  @include font-decoration($pfHandbookProthin, 43.71px, black)
+  text-align: center
+
+  .why-visit-titleCyan
+    color: $lightCyan2
+    font:
+      family: $pfHandbookProMedium
+
+.why-visit-subTitle
+  @include font-decoration($pfHandbookProthin, 17.76px, black)
+  text-align: center
+  margin-top: 7px
+
+.why-visit-subTitleIcon
+  background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+  width: 26px
+  height: 19px
+  margin: 8px auto 0 auto
+
+.why-visit-wrapper
+  width: 970px
+  margin: 0 auto
+  padding-top: 15px
+
+.col-sm-4-visit
+  text-align: center
+  margin-top: 20px
+
+  .why-visit-icon-wrapper
+    width: 133px
+    height: 133px
+    border: 1px solid $gray8
+    border-radius: 50%
+    margin: 0 auto
+    text-align: center
+    overflow: hidden
+    background: white
+    display: table
+
+    figure
+      display: table-cell
+      vertical-align: middle
+      img
+        max-width: 100%
+        height: auto
+
+  .why-visit-wrapper-title
+    @include font-decoration($segoeLight, 16.02px, black)
+    font-weight: bold
+    margin-top: 16px
+
+  .why-visit-wrapper-subTitle
+    @include font-decoration($SegoeUIRegular, 14.02px, $gray32)
+    width: 90%
+    margin: 10px auto 0 auto
+    p
+      margin: 0
+
+.why-visit-media
+  display: none
+  .col-sm-4-visit
+    margin-top: 0
+
+  .why-visit-icon-wrapper
+    img
+      display: inline !important
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    left: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: transparent
+    font-weight: lighter
+    position: absolute
+    right: -28px
+    top: 39px
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    margin-top: 10px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none

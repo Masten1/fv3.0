@@ -1,0 +1,27 @@
+{% if this.hasPaginate() %}
+    <nav class="nav-pager">
+        {% if this.getCurrentPage() > 1 %}
+            <a class="btn btn-30 btn-orange nav-btn-prev" href="{{ this.getPageHref(this.getCurrentPage()-1) }}"><i class="prev"><img src="/theme/images/icons/news_left_grey_arrow.png" title="{{ "Предыдущая страница" | translate }}" alt="{{ "Предыдущая страница" | translate }}"></i></a>
+        {% endif %}
+
+        <div>
+            {% for page in this.getPagesLinks() %}
+                {% if lastPage and ( page-lastPage )>1 %}
+                    <span>…</span>
+                {% endif %}
+
+                {% if page == this.getCurrentPage() %}
+                    <a class="news-numbers active" href="{{ this.getPageHref(page) }}">{{ page }}</a>
+                {% else %}
+                    <a class="news-numbers" href="{{ this.getPageHref(page) }}">{{ page }}</a>
+                {% endif %}
+
+                {% set lastPage = page %}
+            {% endfor %}
+        </div>
+
+        {% if this.getPageCount() > this.getCurrentPage() %}
+            <a class="btn btn-30 btn-orange nav-btn-next" href="{{ this.getPageHref(this.getCurrentPage()+1) }}"><i class="next"><img src="/theme/images/icons/news_right_grey_arrow.png" title="{{ "Следующая страница" | translate }}" alt="{{ "Следующая страница" | translate }}"></i></a>
+        {% endif %}
+    </nav>
+{% endif %}

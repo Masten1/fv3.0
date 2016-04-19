@@ -1,0 +1,542 @@
+#index-doctors
+  background-color: $lightBlue
+  min-height: 613px
+  width: 100%
+  border-bottom: 1px solid $gray7
+
+.index-doctors-title-wrapper
+  padding-top: 78px
+
+  .index-doctors-title
+    font:
+      family: $pfHandbookProthin
+      size: 43.71px
+    color: black
+    text-align: center
+
+  .index-doctors-subtitle
+    font:
+      family: $pfHandbookProthin
+      size: 43.71px
+    color: black
+    text-align: center
+    margin-top: -30px
+
+    .index-doctors-subtitleCyan
+      font:
+        family: $pfHandbookProMedium
+      color: $lightCyan2
+
+  .index-doctors-subtitleSmall
+    font:
+      family: $pfHandbookProthin
+      size: 17.92px
+    color: black
+    text-align: center
+    margin-top: 4px
+
+    .index-doctors-subtitleSmallIcon
+      background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+      width: 26px
+      height: 19px
+      margin: 5px auto 0 auto
+      display: block
+
+.slick-doctors-wrapper
+  width: 885px
+  margin: 0 auto
+  margin-top: 58px
+
+.item-slider-doctor
+  width: 130px
+  height: 130px
+  margin: 0 auto
+  overflow: hidden
+  img
+    max-width: 100%
+    height: auto
+
+
+#slick-doctors-wrapper
+  .slick-prev
+    width: 32px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-left.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    left: -28px
+    top: 39px
+
+  .slick-next
+    width: 33px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-right.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    right: -34px
+    top: 39px
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0
+    margin-top: -6px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none
+
+.slider-doctors-name
+  text-decoration: none
+  display: block
+  width: 100%
+  text-align: center
+  font:
+    family: $segoeLight
+    size: 16.02px
+  color: black
+  margin-top: 15px
+  +user-select(none)
+  outline: none
+  &:hover
+    text-decoration: none
+    color: black
+    +user-select(none)
+    outline: none
+
+.slider-doctors-resume
+  width: 80%
+  margin: 0 auto
+  text-align: center
+  font:
+    family: $SegoeUISemiBold
+    size: 12px
+  color: $lightOrange
+  +user-select(none)
+  outline: none
+  margin-top: 1px
+  line-height: 14px
+  p
+    margin: 0
+
+.slick-slide
+  outline: none !important
+
+#doctors
+  border-top: 1px solid $gray14
+  margin-top: 2px
+  padding-top: 74px
+
+.doctors-title
+  @include font-decoration($pfHandbookProthin, 43.91px, black)
+  text-align: center
+  line-height: 42px
+
+.doctors-subtitle
+  @include font-decoration($pfHandbookProMedium, 43.91px, $lightCyan2)
+  text-align: center
+  line-height: 26px
+
+.doctors-subtitleIcon
+  background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+  width: 26px
+  height: 19px
+  margin: 36px auto 40px auto
+
+.doctor-one
+  padding: 82px 0 64px 0
+  background-color: $lightBlue2
+  border-bottom: 1px solid $gray17
+  +transition(all, 1s)
+  &:last-of-type
+    border-bottom: none
+
+
+.mt-7
+  margin-top: 7px
+
+.doctor-figure
+  width: 310px
+  height: 459px
+  margin: 0 auto
+  text-align: center
+  border: 1px solid $gray15
+  img
+    max-width: 100%
+    height: auto
+
+.doctor-text
+  text-align: left
+  font:
+    family: $pfAgoraSansProRegular
+  color: black
+  line-height: 19px
+  margin-top: 20px
+  width: 84%
+  p
+    margin: 0
+
+
+.doctor-buttons
+  margin-top: 26px
+  padding-left: 2px
+  width: 281px
+  float: left
+
+.doctor-add
+  width: 210px
+  height: 42px
+  float: left
+  background: url("/theme/images/icons/direction-add-button.png") center center no-repeat
+  line-height: 34px
+  text-align: center
+  @include font-decoration($SegoeUIRegular, 14px, white)
+  cursor: pointer
+  margin-left: 5px
+  margin-top: 26px
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/icons/direction-add-hover-button.png") center center no-repeat
+    width: 210px
+    height: 42px
+
+  &.activeDoctorAdd
+    background: url("/theme/images/icons/direction-add-active-button.png") center center no-repeat
+    width: 210px
+    height: 37px
+
+.doctor-show-resume
+  width: 266px
+  height: 42px
+  float: left
+  border: 1px solid $gray4
+  line-height: 37px
+  text-align: left
+  padding-left: 9px
+  position: relative
+  border-radius: 4px
+  @include font-decoration($SegoeUIRegular, 14px, $gray4)
+  cursor: pointer
+  margin-left: 2px
+  +transition(all 0.6s)
+  &:hover, &.active-show-resume
+    background: $gray24
+    border: none
+    color: white
+
+    .doctor-show-resumeIcon
+      background: url("/theme/images/icons/file_direction_hover_icon.png") center center no-repeat
+      width: 13px
+      height: 16px
+
+  .doctor-show-resumeIcon
+    position: absolute
+    background: url("/theme/images/icons/file_direction_icon.png") center center no-repeat
+    width: 13px
+    height: 16px
+    top: 12px
+    right: 15px
+
+
+.doctor-name
+  @include font-decoration($segoeLight, 16.02px, black)
+  text-align: left
+  span
+    text-transform: uppercase
+
+.doctor-resume
+  @include font-decoration($SegoeUISemiBold, 12px, $lightOrange)
+  text-align: left
+  line-height: 19px
+  margin-top: 14px
+  p
+    margin: 0
+
+.doctor-experience
+  @include font-decoration($SegoeUISemiBold, 11.98px, $lightOrange)
+  text-align: left
+
+.doctor-comments
+  margin-top: 26px
+  display: none
+  width: 1100px
+  min-height: 450px
+
+
+.doctor-comments-left-block
+  width: 28%
+  float: left
+
+.doctor-comments-right-block
+  width: 70%
+  float: left
+  padding-left: 38px
+
+.form-doctor-comment
+  border: 1px solid $lightBlue6
+  border-radius: 5px
+  background-color: $lightBlue7
+  padding: 18px 24px
+
+  label
+    @include font-decoration($openSansRegular, 12px, black)
+    margin-bottom: 10px
+
+  input
+    width: 100%
+    height: 39px
+    border-radius: 3px
+    border: 1px solid $lightBlue6
+    padding-left: 11px
+
+    +input-placeholder
+      @include font-decoration($segoeLight, 12px, $lightBlue8)
+
+    &.error
+      background: $error-bg
+      color: $error-color
+      border-color: $error-color
+
+  .form-doctor-name
+
+    .glyphicon-star
+      color: $lightOrange2
+      font-size: 7px
+      margin-left: 1px
+      vertical-align: top
+
+  .form-doctor-mail
+    margin-top: 19px
+    @extend .form-doctor-name
+
+  .form-doctor-text
+    margin-top: 18px
+    @extend .form-doctor-name
+
+    textarea
+      width: 100%
+      border-radius: 3px
+      border: 1px solid $lightBlue6
+      padding-left: 11px
+      min-height: 115px
+      padding-top: 10px
+      +input-placeholder
+        @include font-decoration($segoeLight, 12px, $lightBlue8)
+
+  .form-doctor-rating
+    margin-top: 10px
+    span
+      font-size: 18px
+      padding-right: 5px
+      color: $gray20
+      cursor: pointer
+      &:hover
+        color: $gold1
+      &:last-of-type
+        padding-right: 0
+
+  .comment-name, .comment-email, .comment-comment
+    +transition(all 0.6s)
+    &.error
+      input, textarea
+        border: 1px solid red
+
+  .comment-rating
+    +transition(all 0.6s)
+    &.error
+      span
+        color: $darkRed
+        &:hover
+          color: $gold1
+
+.success-message
+  display: none
+  @include font-decoration($SegoeUISemiBold, 12px, #11aa4c)
+
+
+
+.form-doctor-button-wrapper
+  margin-top: 12px
+  margin-left: -2px
+
+  .form-doctor-button
+    width: 150px
+    height: 35px
+    background-color: $lightRed2
+    border: 1px solid $lightRed2
+    border-bottom-left-radius: 4px
+    border-top-left-radius: 4px
+    cursor: pointer
+    color: white
+    @include font-decoration($SegoeUISemiBold, 14px, white)
+    line-height: 28px
+    text-align: left
+    padding-left: 13px
+    +transition(all 0.6s)
+    outline: none
+    &:hover
+      background-color: darken($lightRed2, 15%)
+      .comment-button-icon
+        background-color: darken($darkRed, 15%)
+
+  .comment-button-icon
+    height: 35px
+    width: 36px
+    background-color: $darkRed
+    border: 1px solid $darkRed
+    border-bottom-right-radius: 4px
+    border-top-right-radius: 4px
+    cursor: pointer
+    position: relative
+    float: right
+    margin-right: 74px
+
+    .comment-button-iconImage
+      background: url("/theme/images/button/comment_button.png") center center no-repeat
+      position: absolute
+      width: 17px
+      height: 16px
+      top: 9px
+      left: 8px
+
+.one-comment-rating-1
+  @include icon-doctor-rating
+  span
+    &:first-of-type
+      color: $gold1
+
+.one-comment-rating-2
+  @include icon-doctor-rating
+  span
+    &:nth-child(-n+2):nth-child(n+1)
+      color: $gold1
+
+.one-comment-rating-3
+  @include icon-doctor-rating
+  span
+    &:nth-child(-n+3):nth-child(n+1)
+      color: $gold1
+
+.one-comment-rating-4
+  @include icon-doctor-rating
+  span
+    &:nth-child(-n+4):nth-child(n+1)
+      color: $gold1
+
+.one-comment-rating-5
+  span
+    color: $gold1 !important
+  @include icon-doctor-rating
+
+.one-comment-title
+  @include font-decoration($openSansRegular, 12px, $gray21 )
+  span
+    color: black
+
+.one-comment-time
+  @include font-decoration($openSansRegular, 10px, $gray21 )
+  margin-top: 4px
+
+.one-comment-text
+  @include font-decoration($openSansRegular, 12px, $gray22 )
+  text-align: justify
+  margin-top: 11px
+  line-height: 15px
+  p
+    margin: 0
+
+.doctor-comments-wrapper
+  width: 500px
+  float: left
+
+  .slick-prev
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: white
+    font-weight: lighter
+    position: absolute
+    left: 2px
+    bottom: -100px
+    +transition(all 0.6s)
+    &:before
+      content: "\e257"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-next
+    font-size: 55px
+    color: #a8a8a8
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    cursor: pointer
+    z-index: 500
+    font-family: 'Glyphicons Halflings'
+    background-color: white
+    font-weight: lighter
+    position: absolute
+    right: 119px
+    bottom: -100px
+    +transition(all 0.6s)
+    &:before
+      content: "\e258"
+    &:hover, &:active
+      color: lighten(#a8a8a8, 10%)
+
+
+  .slick-dots
+    display: none
+
+
+.comments-wrapper
+  width: 500px
+  float: left
+
+  .one-comment
+    width: 500px
+    padding-bottom: 23px
+    &:nth-of-type(2)
+      border-top: 1px solid $gray23
+      padding-top: 30px
+
+.parent-active
+  background-color: white
+
+.doctor-star
+  &.fixed,
+  &.active
+    color: $gold1 !important

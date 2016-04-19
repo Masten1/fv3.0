@@ -1,0 +1,214 @@
+#hamburgNav
+  background-color: $lightCyan3
+  width: 0
+  height: 100%
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  z-index: 4000
+  +transition(all, 0.5s)
+
+  &.activeStaticNav
+    .header-menu-up
+      top: 50px
+    .header-menu-down
+      top: 150px
+
+.active-hamburg-menu
+  width: 24.3% !important
+  right: 24.3%
+  +transition(all, 1s)
+
+  .header-menu-up
+    top: 10px
+  .header-menu-down
+    top: 110px
+
+
+.header-menu-up
+  position: fixed
+  margin: 36px 0 22px 0
+  top: 0
+
+  #close-header-menu
+    background: url("/theme/images/icons/cross_menu.png") center center no-repeat
+    width: 17px
+    height: 17px
+    cursor: pointer
+    float: left
+    margin: 15px 0 0 10px
+
+
+.header-menu-button-add
+  width: 225px
+  height: 50px
+  border: 1px solid white
+  line-height: 45px
+  text-align: center
+  margin-left: 38px
+  border-radius: 7px
+  cursor: pointer
+  @include font-decoration($pfHandbookProthin, 16px, white)
+  color: white
+  background: $lightCyan3
+  float: left
+  +transition(all 0.6s)
+  &:hover
+    background: darken($lightCyan3, 5%)
+  &.activeHeaderAdd
+    background: darken($lightCyan3, 10%)
+
+.header-menu-down
+  float: none
+  position: fixed
+  top: 118px
+  margin-left: 40px
+  height: auto
+  outline: none
+  overflow: hidden
+  overflow-y: auto
+
+.header-menu-down::-webkit-scrollbar
+  width: 5px
+  height: 10% !important
+  border: 1px solid $lightOrange
+  border-radius: 5px
+
+  .header-menu-down::-webkit-scrollbar-thumb
+    background: $lightOrange
+
+  .header-menu-down::-webkit-scrollbar-track
+    background: #FCC7BD
+
+.header-nav-item
+  border-bottom: 2px dotted $lightCyan4
+  line-height: 35px
+  min-height: 41px
+
+  a
+    @include font-decoration($segoeLight, 16px, $lightCyan4)
+    text-transform: uppercase
+    &:hover, &:active
+      @include font-decoration($segoeLight, 16px, white)
+      text-decoration: none
+
+  &:last-of-type
+    border-bottom: none
+
+  .colorWhite
+    p
+      color: white
+
+  &.active-subNav-children
+    .header-subNav-item-hidden
+      .header-subNavChildren-item
+        display: block
+      &.active-subNavChild
+        .header-subNavChildren-hidden
+          display: block
+
+.header-subNav-item
+  cursor: pointer
+  p
+    @include font-decoration($segoeLight, 16px, $lightCyan4)
+    text-transform: uppercase
+    margin: 0
+
+    &:hover
+      @include font-decoration($segoeLight, 16px, white)
+
+.header-subNavChildren-item
+  display: none
+  p, a
+    text-transform: none
+    @include font-decoration($segoeLight, 16px, white)
+    margin: 0
+    cursor: pointer
+    text-decoration: none
+
+    &:hover, &:active
+      text-transform: none
+      @include font-decoration($segoeLight, 16px, white)
+      text-decoration: none
+
+
+.header-subNavChildren-hidden
+  padding-left: 49px
+  line-height: 20px
+  display: none
+  margin-bottom: 8px
+  &:last-of-type
+    margin-bottom: 0
+
+  a
+    text-transform: none
+    @include font-decoration($segoeLight, 16px, $lightCyan4)
+
+    &.sectionHref
+      text-transform: none
+      @include font-decoration($segoeLight, 16px, $lightCyan4)
+      background: url("/theme/images/icons/hover_menu_item.jpg") 0 7px no-repeat
+      padding-left: 20px
+      +transition(padding, 0.5s)
+
+    &:hover
+      text-transform: none
+      @include font-decoration($segoeLight, 16px, $lightCyan4)
+      background: url("/theme/images/icons/hover_menu_item.jpg") 0 7px no-repeat
+      padding-left: 20px
+      +transition(padding, 0.5s)
+
+
+.header-subNav-item-hidden
+  padding-left: 38px
+
+.headerAddMenu-wrapper
+  @extend .hover-wrapper-add
+
+  #form-inspection-header
+    padding-top: 27px
+    width: 81%
+    margin: 0 auto
+    padding-bottom: 28px
+
+    .form-inspection-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 67% center no-repeat !important
+
+
+    .form-inspection-header-phone
+      &.error
+        input
+          border: 1px solid red
+
+    .form-inspection-header-doctor
+      &.error
+        .select
+          border: 1px solid red
+
+
+    @extend #form-inspection
+
+.only-home-subNav
+  color: white !important
+  margin: 0
+  cursor: pointer
+  text-decoration: none
+  text-transform: none !important
+  &:hover
+    text-decoration: none
+    color: white !important
+
+  &.active
+    background: url("/theme/images/icons/hover_menu_item.jpg") 0 7px no-repeat
+    padding-left: 20px
+    +transition(padding, 0.5s)
+
+.header-nav-item-direction
+  .header-subNav-item-hidden
+    .header-subNavChildren-item
+      display: block
+
+

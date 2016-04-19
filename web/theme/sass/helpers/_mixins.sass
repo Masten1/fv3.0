@@ -1,0 +1,148 @@
+=retina
+  @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5)
+    @content
+
+=font( $name, $file, $weight : normal, $style : normal )
+  $fileName: "#{$file}"
+
+  @font-face
+    font-family: quote($name)
+    src: font-url("#{$fileName}.eot")
+    src: font-url("#{$fileName}.eot?#iefix") format('embedded-opentype'), font-url("#{$fileName}.woff") format('woff'), font-url("#{$fileName}.ttf") format('truetype')
+    font-weight: $weight
+    font-style: $style
+
+=placeholder
+  ::-webkit-input-placeholder
+    @content
+
+  &:-moz-placeholder
+    @content
+
+  ::-moz-placeholder
+    @content
+
+  &:-ms-input-placeholder
+    @content
+
+=keyframes($name)
+  @-webkit-keyframes #{$name}
+    @content
+  @-moz-keyframes #{$name}
+    @content
+  @-ms-keyframes #{$name}
+    @content
+  @keyframes #{$name}
+    @content
+
+=vendor( $prop, $value )
+  -webkit-#{$prop}: $value
+  -moz-#{$prop}: $value
+  -o-#{$prop}: $value
+  #{$prop}: $value
+
+=direction-image( $width, $height, $pTop, $pLeft, $pWidth, $lHeight, $topImg, $leftImg, $topHover, $leftHover )
+  width: $width
+  height: $height
+  position: relative
+  z-index: 500
+  cursor: pointer
+  p
+    position: absolute
+    display: block
+    color: black
+    font:
+      family: $SegoeUIRegular
+      size: 14.13px
+    top: $pTop
+    left: $pLeft
+    text-align: center
+    width: $pWidth
+    margin: 0
+    line-height: $lHeight
+  img
+    max-width: 100%
+    height: auto
+
+  .direction-index-first
+    position: absolute
+    top: $topImg
+    left: $leftImg
+
+
+  .direction-index-hover
+    display: none
+    position: absolute
+    top: $topHover
+    left: $leftHover
+
+  &.active
+    .direction-index-first
+      display: none
+    .direction-index-hover
+      display: block
+
+  &:hover
+    .direction-index-first
+      display: none
+
+    .direction-index-hover
+      display: block
+
+=font-decoration( $family, $size, $color )
+  font:
+    family: $family
+    size: $size
+  color: $color
+
+=icon-how-direction($top, $left)
+  position: absolute
+  top: $top
+  left: $left
+  max-width: 200px
+  min-width: 200px
+
+  .how-icon-wrapper
+    width: 110px
+    margin: 0 auto
+
+    .how-icon
+      width: 110px
+      height: 110px
+      border-radius: 50%
+      background-color: #ffffff
+      border: 1px solid #3cc1cc
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+      img
+        max-width: 100%
+        height: auto
+
+  .how-title
+    @include font-decoration($segoeLight, 16.17px, black)
+    display: block
+    width: 80%
+    margin: 13px auto 0 auto
+    text-align: center
+
+=icon-doctor-rating
+  margin-top: 11px
+  span
+    font-size: 18px
+    margin-right: 5px
+    color: $gray20
+
+
+=consult-input($background)
+  width: 100%
+  height: 45px
+  border: 1px solid $gray5
+  border-radius: 3px
+  background: $background
+  padding-left: 43px
+  +input-placeholder
+    font:
+      family: $openSansRegular
+      size: 14px
+    color: $black1

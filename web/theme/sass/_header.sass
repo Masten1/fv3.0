@@ -1,0 +1,659 @@
+.header-height
+  height: 125px
+
+.header-info-block
+  width: 25%
+  float: left
+  margin-top: 19px
+
+  .header-phone
+    position: relative
+
+  .header-phone-icon
+    background: url("/theme/images/icons/header-phone-icon.png") no-repeat 0 0
+    display: block
+    width: 18px
+    height: 18px
+    position: absolute
+    top: 3px
+
+  .header-phone-small
+    padding-left: 31px
+    font-size: 13.8px
+    color: #848484
+    width: 39%
+    float: left
+    font-family: $pfDinDispayPro
+
+  .header-phone-small-1
+    border-right: 1px solid #848484
+    padding-right: 8px
+  .header-phone-small-2
+    padding-left: 5px
+
+  .header-phone-large
+    width: 61%
+    float: left
+    color: $gray1
+    font-size: 24px
+    margin-top: -3px
+    padding-left: 5px
+    font-family: $pfDinDispayPro
+    a
+      @include font-decoration($pfDinDispayPro, 24px, $gray1)
+      text-decoration: none
+      &:hover
+        @include font-decoration($pfDinDispayPro, 24px, $gray1)
+        text-decoration: none
+
+
+  .header-address
+    color: $gray1
+    font-size: 12px
+    padding-left: 32px
+    margin-top: 2px
+    font-family: $pfDinDispayPro
+
+  .header-time-info
+    margin-top: 5px
+    font-family: $pfDinDispayPro
+    span
+      font-size: 12px
+      padding-left: 34px
+      color: $gray1
+      display: block
+      line-height: 15px
+
+.header-logo
+  width: 44%
+  padding-left: 7%
+  float: left
+  text-align: center
+  margin-top: 22px
+  img
+    max-width: 100%
+    height: auto
+
+.header-menu
+  width: 25%
+  float: left
+  margin-top: 24px
+  position: relative
+  p
+    font-size: 19px
+    color: $gray1
+    text-align: right
+    padding-right: 18.2%
+    font-family: $pfDinDispayPro
+  span
+    background: url("/theme/images/icons/header-menu-icon.png") no-repeat 0 0
+    display: block
+    width: 26px
+    height: 23px
+    position: absolute
+    cursor: pointer
+    top: 0
+    right: 2px
+
+#header-index-info-media
+  display: none
+  min-height: 770px
+  margin-top: 1px
+  background: url("/theme/images/background/index-first-block-background.jpg") center center no-repeat
+  background-size: cover
+
+
+#header-index-info
+  height: auto
+  margin-top: 1px
+  position: relative
+  overflow: hidden
+  padding-bottom: 50px
+
+
+#home-bg
+  width: 100%
+
+.container-background
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+
+.video-overlay
+  background: rgba(0, 0, 0, 0.6)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 11
+
+.header-index-block
+  padding-top: 150px
+  margin-left: -2px
+
+  .header-index-title
+    color: $lightCyan
+    font-size: 20.72px
+    padding-left: 42px
+    font-family: $pfHandbookProthin
+
+  .header-index-subTitle
+    margin-top: -45px
+    width: 75%
+    margin-bottom: 19px
+    font-family: $pfHandbookProMedium
+    line-height: 44px
+    p
+      color: white
+      font-size: 43.92px
+      margin: 0
+      &:first-of-type
+        &::first-letter
+          font-size: 80px
+
+    .header-index-subTitle-sub
+      text-transform: uppercase
+      font-size: 43.92px
+      color: $lightCyan
+      display: inline-block !important
+      font-family: $pfHandBookProBold
+
+  .header-index-mask
+    background: url("/theme/images/icons/mask-icon.png") 2px 10px no-repeat
+    height: 36px
+    display: block
+    padding-left: 44px
+    font-size: 20.72px
+    color: white
+    font-family: $pfHandbookProthin
+    margin: 0
+    line-height: 44px
+
+#consult-phone
+  color: #ffffff
+  font-size: 15px
+  cursor: pointer
+  text-align: center
+  background: url("/theme/images/button/consult-phone.png") no-repeat
+  width: 367px
+  height: 55px
+  float: left
+  margin-top: 36px
+  line-height: 47px
+  font-family: $SegoeUIRegular
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/button/consult-phone-hover.png") no-repeat
+    width: 367px
+    height: 55px
+
+  &.activeConsult
+    background: url("/theme/images/button/consult-phone-active.png") no-repeat
+    width: 367px
+    height: 50px
+
+#consult-phone-media
+  color: #ffffff
+  font-size: 15px
+  cursor: pointer
+  text-align: center
+  background: url("/theme/images/button/consult-phone.png") no-repeat
+  width: 367px
+  height: 55px
+  float: left
+  margin-top: 36px
+  line-height: 47px
+  font-family: $SegoeUIRegular
+  +transition(all 0.6s)
+  &:hover
+    background: url("/theme/images/button/consult-phone-hover.png") no-repeat
+    width: 367px
+    height: 55px
+
+  &.activeConsult
+    background: url("/theme/images/button/consult-phone-active.png") no-repeat
+    width: 367px
+    height: 50px
+
+#header-index-more
+  @include font-decoration($segoeLight, 16px, white)
+  cursor: pointer
+  text-align: center
+  width: 363px
+  height: 57px
+  float: left
+  margin-top: 23px
+  line-height: 45px
+  border: 1px solid white
+  border-radius: 5px
+  position: relative
+  +transition(all 0.8s)
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    display: block
+    width: 100%
+    height: 57px
+    &:hover
+      text-decoration: none
+
+  .header-index-moreIcon
+    position: absolute
+    bottom: -8px
+    left: 167px
+    background: url("/theme/images/icons/more-white-heart.png") center center no-repeat
+    width: 27px
+    height: 12px
+
+  &:hover, &:active
+    background: rgba(255, 255, 255, 0.7)
+    a
+      @include font-decoration($segoeLight, 16px, black)
+
+#header-index-more-media
+  @include font-decoration($segoeLight, 16px, white)
+  cursor: pointer
+  text-align: center
+  width: 363px
+  height: 57px
+  float: left
+  margin-top: 23px
+  line-height: 45px
+  border: 1px solid white
+  border-radius: 5px
+  position: relative
+  +transition(all 0.8s)
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    display: block
+    width: 100%
+    height: 57px
+    &:hover
+      text-decoration: none
+
+  .header-index-moreIcon
+    position: absolute
+    bottom: -8px
+    left: 167px
+    background: url("/theme/images/icons/more-white-heart.png") center center no-repeat
+    width: 27px
+    height: 12px
+
+  &:hover, &:active
+    background: rgba(255, 255, 255, 0.7)
+    a
+      @include font-decoration($segoeLight, 16px, black)
+
+
+.header-blog-inner
+  width: 29%
+  float: right
+  padding-top: 3px
+
+  .change-lang
+    float: right
+    margin: 10px 2% 10px 0
+
+  .header-blog-inner-info
+    padding-left: 5px
+    padding-top: 13px
+    a
+      display: inline-block
+      @include font-decoration($SegoeUIRegular, 13px, $darkBlue2)
+      text-decoration: underline
+      vertical-align: top
+      margin-right: 17px
+      padding-top: 4px
+      &:hover
+        color: $darkBlue2
+
+    .header-blog-inner-vk
+      display: inline-block
+      background: url("/theme/images/icons/vk.png") center center no-repeat
+      width: 32px
+      height: 30px
+      cursor: pointer
+
+    .header-blog-inner-fb
+      display: inline-block
+      background: url("/theme/images/icons/fb.png") center center no-repeat
+      width: 32px
+      height: 30px
+      cursor: pointer
+
+  .header-blog-inner-button
+    background: url("/theme/images/button/add-header-inner.png") center center no-repeat
+    width: 233px
+    height: 43px
+    text-align: center
+    line-height: 33px
+    cursor: pointer
+    +user-select(none)
+    @include font-decoration($SegoeUIRegular, 16px, white)
+    float: right
+    margin-top: 8px
+    +transition(all 0.6s)
+    &.activeBlogInner
+      background: url("/theme/images/button/add-header-inner-active.png") no-repeat
+      width: 233px
+      height: 43px
+    &:hover
+      background: url("/theme/images/button/add-header-inner-hover.png") no-repeat
+      width: 233px
+      height: 43px
+
+
+.consult-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-index-consult
+    @extend #form-hover-add
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 60% center no-repeat !important
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 35% center no-repeat !important
+
+    .form-hover-add-name, .form-hover-add-phone
+      &.error
+        input
+          border: 1px solid red
+
+
+.addDoctor-blog-hover-wrapper
+  @extend .hover-wrapper-add
+
+  #form-hover-addDoctor-blog
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 40% center no-repeat !important
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 35% center no-repeat !important
+
+
+    @extend #form-hover-add
+    .form-hover-blog-add-name, .form-hover-blog-add-phone, .form-hover-blog-add-doctor
+      &.error
+        input, .select
+          border: 1px solid red
+
+.change-lang
+  width: 25%
+  float: left
+  margin-top: 24px
+  text-align: right
+  @include font-decoration($pfDinDispayPro, 13.35px, black)
+  a
+    cursor: pointer
+    @include font-decoration($pfDinDispayPro, 13.35px, black)
+    text-decoration: none
+    &:first-of-type
+      margin-right: 5px
+    &:last-of-type
+      margin-left: 2px
+    &:hover, &:active
+      color: black
+      text-decoration: none
+    &.language-active
+      color: #ee4934
+      text-decoration: underline
+      &:hover, &:active
+        color: #ee4934
+        text-decoration: underline
+
+.container-static-buttons
+  z-index: 3000
+  position: relative
+
+.static-add
+  padding: 10px
+  background: $lightCyan2
+  border-radius: 2px
+  text-align: left
+  cursor: pointer
+  +transition(all 0.6s)
+  position: fixed
+  z-index: 3000
+  top: 24%
+  left: 0
+
+  .static-add-icon
+    background: url("/theme/images/icons/static-add-icon.png") center right no-repeat
+    width: 30px
+    height: 10px
+    display: inline-block
+
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    text-decoration: none
+    display: none
+    &:hover
+      @include font-decoration($segoeLight, 16px, white)
+      text-decoration: none
+
+  &:hover
+    background: darken($lightCyan2, 15%)
+    a
+      display: inline-block
+      margin-right: 5px
+
+  &.active-static-click
+    display: block
+    &:hover
+      a
+        @include font-decoration($segoeLight, 16px, white)
+        text-decoration: none
+        display: none
+        &:hover
+          @include font-decoration($segoeLight, 16px, white)
+          text-decoration: none
+
+.static-question
+  text-align: center
+  background: $lightCyan2
+  border-radius: 2px
+  position: fixed
+  z-index: 3000
+  top: 33%
+  left: 0
+  height: 39px
+  line-height: 39px
+  +transition(all 0.6s)
+  padding: 0 11px
+  cursor: pointer
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    text-decoration: none
+    display: none
+    &:hover
+      @include font-decoration($segoeLight, 16px, white)
+      text-decoration: none
+
+  &:hover
+    background: darken($lightCyan2, 15%)
+    a
+      display: inline-block
+      margin-right: 5px
+
+  &.active-static-click
+    display: block
+    &:hover
+      a
+        @include font-decoration($segoeLight, 16px, white)
+        text-decoration: none
+        display: none
+        &:hover
+          @include font-decoration($segoeLight, 16px, white)
+          text-decoration: none
+
+.static-call
+  text-align: center
+  background: $lightCyan2
+  border-radius: 2px
+  position: fixed
+  z-index: 3000
+  top: 42%
+  left: 0
+  height: 38px
+  line-height: 38px
+  +transition(all 0.6s)
+  padding: 0 14px
+  cursor: pointer
+  a
+    @include font-decoration($segoeLight, 16px, white)
+    text-decoration: none
+    display: none
+    &:hover
+      @include font-decoration($segoeLight, 16px, white)
+      text-decoration: none
+
+  &:hover
+    background: darken($lightCyan2, 15%)
+    a
+      display: inline-block
+      margin-right: 5px
+
+  &.active-static-click
+    display: block
+    &:hover
+      a
+        @include font-decoration($segoeLight, 16px, white)
+        text-decoration: none
+        display: none
+        &:hover
+          @include font-decoration($segoeLight, 16px, white)
+          text-decoration: none
+
+
+
+.question-static-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-static-add-question
+    @extend #form-hover-add
+    .form-free-consult-anonymous
+      background: url("/theme/images/icons/form-index-mask.png") 14px no-repeat
+      width: 100%
+      height: 29px
+      font:
+        family: $openSansRegular
+        size: 14px
+      color: $gray25
+      padding-left: 54px
+      padding-top: 3px
+      margin-bottom: 5px
+      font-weight: bolder
+
+    .form-hover-add-mail
+      margin-bottom: 16px
+      input
+        +consult-input(url("/theme/images/icons/form-index-message.png") 14px no-repeat)
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 27% center no-repeat !important
+
+
+    .form-hover-add-text
+      textarea
+        width: 100%
+        border-radius: 3px
+        border: 1px solid $lightBlue6
+        padding-left: 11px
+        min-height: 115px
+        padding-top: 10px
+        font:
+          family: $openSansRegular
+          size: 14px
+        color: $black1
+        +consult-input(url("/theme/images/icons/form-message.png") 14px 13px no-repeat)
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 48% center no-repeat !important
+
+
+    .form-hover-question-dir-name, .form-hover-question-dir-email, .form-hover-question-dir-question
+      &.error
+        input, textarea
+          border: 1px solid red
+
+.static-call-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-call-static
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 40% center no-repeat !important
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 35% center no-repeat !important
+
+    @extend #form-hover-add
+
+    .form-hover-add-contact-name, .form-hover-add-contact-phone
+      &.error
+        input
+          border: 1px solid red
+
+#header-static-hide
+  background: $lightOrange3
+  padding: 5px 0
+  width: 100%
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  display: none
+  z-index: 9999
+
+  &.not-show-header-static
+    display: none !important
+
+
+  .header-info-block
+    display: table-cell
+    vertical-align: middle
+    float: none
+    width: 31%
+    .header-phone-small
+      width: 32%
+
+  .header-logo
+    width: 41%
+    padding-left: 0
+    float: none
+    margin-top: 0
+    vertical-align: middle
+    display: table-cell
+    +user-select(none)
+    outline: none
+
+
+  .header-menu
+    width: 28%
+    float: none
+    margin-top: 0
+    vertical-align: middle
+    display: table-cell
+    p
+      margin: 0
+      padding-right: 25%
+    .header-menu-icon
+      top: 28%
+
+  .h-header-static
+    display: table
+

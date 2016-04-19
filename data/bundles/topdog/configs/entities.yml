@@ -1,0 +1,4 @@
+entities:
+  Articles:
+    implements: [ iMeta, iWebAccess, iRecord ]
+    fields:

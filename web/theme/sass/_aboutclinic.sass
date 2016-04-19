@@ -1,0 +1,368 @@
+.header-about
+  background: url("/theme/images/background/about-background-light.jpg") center center no-repeat
+  min-height: 725px
+  background-size: cover
+  position: relative
+
+  .header-about-content
+    padding: 253px 0 215px 150px
+    background: url("/theme/images/icons/about-upper-box.png") 174px 264px no-repeat
+
+    img
+      padding: 0 0 0 0
+
+    span
+      margin: 23px 0 0 50px
+      @include font-decoration($pfHandbookProMedium, 43.92px, white)
+
+      span
+        margin: 0 0 0 0
+        @include font-decoration($pfHandbookProMedium, 43.72px, $lightCyan4)
+
+.about-founder-info
+  .about-founder-title
+    padding-bottom: 20px
+    text-align: center
+    line-height: 29px
+
+    span
+      @include font-decoration($pfHandbookProthin, 43.72px, black)
+
+      span
+        margin: 0 0 0 0
+        @include font-decoration($pfHandbookProMedium, 43.72px, $lightCyan2)
+
+    .about-title-icon
+      background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+      height: 19px
+      align-content: center
+      margin-top: 10px
+
+#founder
+  padding-bottom: 85px
+
+.about-founder
+  .about-founder-block-image
+    float: left
+    width: 23%
+    padding-left: 12%
+
+    figure
+      img
+        border: 1px solid lightgrey
+
+  .about-founder-block
+    float: left
+    width: 77%
+    padding-left: 14%
+
+    div
+      display: block
+
+      p
+        margin: 0 0 0 0
+
+    #about-founder-block-name
+      text-transform: uppercase
+      padding-bottom: 5px
+      @include font-decoration($SegoeUIRegular, 16.02px, black)
+
+    #about-founder-block-text
+      padding-bottom: 6px
+      @include font-decoration($SegoeUISemiBold, 12px, $lightOrange)
+
+    #about-founder-block-desc
+      @include font-decoration($SegoeUIRegular, 16px, black)
+
+.cabinet-info
+  .cabinet-title
+    padding: 63px 0 0 0
+    text-align: center
+    line-height: 29px
+
+    span
+      @include font-decoration($pfHandbookProthin, 43.72px, black)
+
+      span
+        margin: 0 0 0 0
+        @include font-decoration($pfHandbookProMedium, 43.72px, $lightCyan2)
+
+    .cabinet-title-icon
+      background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+      height: 19px
+      align-content: center
+      margin-top: 10px
+      margin-bottom: 40px
+
+.cabinet-galleries
+  margin-left: 15px
+
+  #image-4
+    margin-right: 0
+
+  .gallery
+    padding: 0
+    margin: 0
+    width: 100%
+    display: block
+
+    li
+      display: inline
+
+      img:first-child
+        position: absolute
+        opacity: 1
+
+        &:first-child
+          opacity: 0
+          top: 45%
+          right: 45%
+
+    li:hover img
+      opacity: 0.3
+      transition-duration: 0.5s
+
+    li:hover img:first-child
+      opacity: 1
+      z-index: 100
+
+    li:nth-child(n+2)
+      visibility: hidden
+
+    .cabinet-galleries-photo
+      display: block
+      max-width: 100%
+      height: auto
+      margin: 0 auto
+
+    .cabinet-galleries-name
+      padding-top: 11px
+      text-align: center
+      @include font-decoration($segoeLight, 13.96px, $gray27)
+
+.cabinet-photo
+  width: 100%
+  height: auto
+  background-color: white
+  text-align: center
+
+  a
+    display: block
+    width: 100%
+    position: relative
+
+    img
+      top: 45%
+      right: 45%
+
+.fleft
+  float: left
+  margin: 0 25px 20px 0
+  height: 250px
+
+.clean-info
+  .clean-title
+    padding: 100px 0 0 0
+    text-align: center
+    line-height: 29px
+
+    span
+      @include font-decoration($pfHandbookProthin, 43.72px, black)
+
+      span
+        @include font-decoration($pfHandbookProMedium, 43.72px, $lightCyan2)
+        margin: 0 0 0 0
+
+    .clean-title-icon
+      background: url("/theme/images/icons/red-hearth-icon.png") center center no-repeat
+      height: 19px
+      align-content: center
+      margin-top: 10px
+
+.clean-photos
+  padding: 24px 0 0 207px
+
+  .clean-photos-item
+    padding-right: 3px
+    display: inline-block
+
+.clean-text
+  padding: 25px 0 77px 0
+  text-align: center
+  @include font-decoration($segoeLight, 18.01px, $gray27)
+
+
+#aboutBlock
+  #index-about
+    .index-about-medical
+      border-radius: 20%
+
+#index-inspection
+  background: url("/theme/images/background/about-form-background.jpg") center center no-repeat
+  height: 832px
+
+//Page's upper slider
+.about-photo-slider
+  margin-top: -180px
+  width: 1120px
+
+  .slick-slider-about
+    margin-top: -150px
+    display: none
+
+  .custom-slider
+    font-size: 14px
+    font-family: "Verdana",Geneva,sans-serif
+    margin: 0
+    padding: 0
+    overflow: hidden
+
+.content
+  position: relative
+  margin: 10px
+  max-width: 100%
+  height: 400px
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+
+  img
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+    margin-bottom: 5px
+
+  div
+    display: inline-block
+
+  .first
+    span
+      display: block
+
+  .second
+    img
+      margin-bottom: 150px
+
+#slick-cabinet-wrapper
+  .slick-prev
+    width: 32px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-left.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    left: -58px
+    top: 50px
+
+  .slick-next
+    width: 33px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-right.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    right: -59px
+    top: 50px
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0 auto
+    margin-top: 9px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none
+
+  .item-slider-cabinet
+    width: 100%
+    overflow: hidden
+    outline: none
+    +user-select(none)
+    a
+      text-decoration: none
+      outline: none
+      +user-select(none)
+      &:hover
+        text-decoration: none
+      img
+        outline: none
+        max-width: 100%
+        height: auto
+        margin: 0 auto
+
+  .slick-prev
+    width: 32px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-left.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    left: -58px
+    top: 50px
+
+  .slick-next
+    width: 33px
+    height: 53px
+    background: url("/theme/images/icons/index-slider-arrow-right.png") center center no-repeat
+    display: block
+    border: none
+    +user-select(none)
+    outline: none
+    position: absolute
+    right: -59px
+    top: 50px
+
+  .slick-dots
+    list-style: none
+    text-align: center
+    margin: 0 auto
+    margin-top: 9px
+    padding: 0
+
+    li
+      margin-right: 2px
+      display: inline-block
+      background: $gray26
+      width: 10px
+      height: 10px
+      border-radius: 50%
+      border: none
+      +user-select(none)
+      outline: none
+      font-size: 0
+      cursor: pointer
+      &:last-of-type
+        margin-right: 0
+      button
+        display: none
+
+    .slick-active
+      background: $lightCyan2
+      button
+        display: none

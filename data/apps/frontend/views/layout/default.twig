@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html lang="{{ lang }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>{{ this.getTitle()}}</title>
+
+        {% for sheet in this.getCss() %}
+            <link rel="stylesheet" href="{{ sheet.href }}"/>
+        {% endfor %}
+
+        {% for item in this.getMeta() %}
+            <meta name="{{ item['name'] }}" content="{{ item['content'] }}"/>
+        {% endfor %}
+        <link rel="shortcut icon" href="/favicon.ico?ver=1.1"/>
+    </head>
+    <body>
+
+        <div class="wrapper">
+
+
+            {{ body | raw }}
+
+
+        </div>
+
+        {% for script in this.getJs() %}
+            <script type="text/javascript" src="{{ script }}"></script>
+        {% endfor %}
+    </body>
+</html>

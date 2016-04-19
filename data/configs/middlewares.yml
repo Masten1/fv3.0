@@ -1,0 +1,6 @@
+middleWares:
+  ExceptionHandler:
+  Assets:
+  PageNotFound:
+  AppSelector:
+  StaticRouter:

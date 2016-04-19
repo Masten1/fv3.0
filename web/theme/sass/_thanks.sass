@@ -1,0 +1,31 @@
+.thanks-page
+  background: url("/theme/images/background/thanks-page-background.jpg") center center no-repeat
+  height: 850px
+  background-size: cover
+
+  .thanks-content
+    padding: 300px 0 0 610px
+
+    .thanks-text-right
+      p
+        @include font-decoration($pfHandbookProMedium, 43.92px, white)
+        margin: -77px 0 20px 0
+        &::first-letter
+          font-size: 79.92px
+          margin: 0 0 0 0
+
+      span
+        @include font-decoration($pfHandbookProMedium, 20.72px, white)
+        color: $lightCyan
+        padding-left: 39px
+
+    .thanks-submit
+      width: 301px
+      height: 56px
+      background: url("/theme/images/button/free-consult-button.png") center center no-repeat
+      outline: none
+      border: none
+      @include font-decoration($openSansRegular, 16px, white)
+      text-align: center
+      padding-bottom: 7px
+      margin: 20px 0 0 5px

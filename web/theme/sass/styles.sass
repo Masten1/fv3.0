@@ -1,0 +1,120 @@
+@import "compass"
+@import "variables"
+@import "fonts"
+@import "animations"
+@import "helpers/mixins"
+@import "header"
+@import "about"
+@import "directions"
+@import "free-consult"
+@import "doctors"
+@import "visit"
+@import "licenses"
+@import "news"
+@import "sign-inspection"
+@import "footer"
+@import "map"
+@import "navigation-header"
+@import "thanks"
+@import "contacts"
+@import "aboutclinic"
+
+
+.index-direction-remove-mobile
+  display: none !important
+
+@import "media"
+
+*
+  text-rendering: optimizeLegibility
+
+body
+  width: 100%
+
+.wrapper
+  position: relative
+  overflow-x: hidden
+  width: 100%
+
+.wrapper-content
+  right: 0
+  +transition(right .5s)
+
+  &.hidden-wrapper
+    right: 24.3%
+    position: relative
+    width: 100%
+    +transition(right .5s)
+
+
+.container-medical
+  width: 1100px
+  margin: 0 auto
+  position: relative
+  z-index: 12
+
+#breadcrumbs
+  margin: 0
+  padding: 0
+  list-style: none
+  border-width: 1px
+  overflow: hidden
+  margin-top: 10px
+  width: 70%
+  float: left
+
+  li
+    float: left
+    border-top: 1px solid $gray15
+    border-bottom: 1px solid $gray15
+    &:first-of-type
+      border-left: 1px solid $gray15
+
+    .bread-active
+      color: $lightCyan2
+
+    &:first-of-type
+      a
+        padding-left: 25px
+        padding-right: 5px
+        position: relative
+
+        img
+          position: absolute
+          top: 9px
+          left: 6px
+
+
+  a
+    padding: 6px 1em 6px 2em
+    float: left
+    text-decoration: none
+    color: $lightBlue8
+    position: relative
+    font-size: 14px
+
+    &:after, &:before
+      content: ""
+      position: absolute
+      top: 50%
+      margin-top: -18px
+      border-top: 18.4px solid transparent
+      border-bottom: 18.4px solid transparent
+      border-left: 1em solid
+      right: -13px
+
+#breadcrumbs a::after
+  border-left-color: white
+
+
+#breadcrumbs a::before
+  border-left-color: black
+
+.not-found
+  min-height: 650px
+  margin-top: 50px
+  text-align: center
+
+  a
+    color: blue
+    text-decoration: none

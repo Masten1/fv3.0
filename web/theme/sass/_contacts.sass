@@ -1,0 +1,189 @@
+#contacts-page
+  min-height: 770px
+  margin-top: -1px
+  position: relative
+  background-size: cover
+
+.header-overlay
+  background: rgba(0, 0, 0, 0.6)
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  z-index: 11
+
+.contacts-content
+  padding-top: 235px
+
+  .contacts-text
+    span
+      display: block
+
+    span:nth-child(1)
+      @include font-decoration($pfHandbookProMedium, 20.72px, $lightCyan)
+      padding-left: 49px
+
+    span:nth-child(2)
+      @include font-decoration($pfHandbookProMedium, 43.92px, white)
+      margin-top: -76px
+      &::first-letter
+        font-size: 79.92px
+
+    span:nth-child(3)
+      @include font-decoration($pfHandbookProMedium, 20.72px, white)
+
+  .button
+    margin-top: 65px
+
+    .contacts-submit
+      width: 301px
+      height: 55px
+      background: url("/theme/images/button/free-consult-button.png") center center no-repeat
+      outline: none
+      border: none
+      @include font-decoration($openSansRegular, 13px, white)
+      text-align: center
+      +transition(all 0.6s)
+      padding-bottom: 5px
+      &:hover
+        background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+        width: 301px
+        height: 55px
+
+      &.activeContactAdd
+        background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+        width: 300px
+        height: 55px
+        line-height: 50px
+        padding-bottom: 5px
+
+.tel-number
+  margin-top: 40px
+
+  span
+    @include font-decoration($pfHandbookProMedium, 25.13px, white)
+
+  img
+    width: 33px
+    margin-right: 14px
+
+  p
+    position: absolute
+    margin: -17px 0 0 9px
+    @include font-decoration($pfHandbookProMedium, 45.13px, white)
+    display: inline-block
+
+.contacts-direct-map
+  margin-top: 32px
+
+  span
+    @include font-decoration($openSansRegular, 16px, white)
+
+    span
+      padding-left: 3px
+      display: inline-block
+      @include font-decoration($openSansRegular, 45px, $lightCyan)
+
+.contacts-look
+  cursor: pointer
+  text-align: center
+  border: 1px solid white
+  border-radius: 5px
+  width: 210px
+  height: 57px
+  float: left
+  margin-top: 5px
+  line-height: 45px
+  font-family: "SegoeUILight", sans-serif
+  @include font-decoration($segoeFF, 16px, white)
+  +user-select(none)
+  position: relative
+  +transition(all 0.8s)
+  &:hover, &:active
+    background: rgba(255, 255, 255, 0.7)
+  a
+    display: block
+    width: 100%
+    height: 57px
+    @include font-decoration($segoeFF, 16px, white)
+    &:hover, &:active
+      text-decoration: none
+      @include font-decoration($segoeFF, 16px, white)
+
+  .header-index-moreIcon
+    position: absolute
+    bottom: -8px
+    left: 46%
+    background: url("/theme/images/icons/more-white-heart.png") center center no-repeat
+    width: 27px
+    height: 12px
+
+#contacts-block
+
+  .form-inspection-wrapper
+    height: 360px
+
+    .form-inspection-title
+      padding: 55px 0 0 0
+      text-align: center
+
+    .form-inspection-subTitleSmall
+      text-align: center
+
+    #form-inspection
+      div
+        display: inline-block
+        width: 304px
+        padding: 15px 0 0 9px
+
+      .form-inspection-name
+        margin-left: 25px
+
+      .form-inspection-number
+        .form-inspection-numberIcon
+          top: 25px
+
+      .form-inspection-doctor
+        background-position: 21px 28px
+        .select
+          border-radius: 3px
+          padding: 0
+
+          .styledSelect
+            padding: 0 0 0 45px
+
+
+      .form-inspection-anonymous
+        padding-left: 54px
+        margin: 80px 0 0 33px
+        height: 50px
+        position: absolute
+
+      .marLeft-2
+        margin: 5px 0 0 20px
+
+.contacts-hover-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-contacts
+    .form-hover-add-number
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 38% center no-repeat !important
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 36% center no-repeat !important
+
+
+    @extend #form-hover-add
+
+    .form-hover-add-contact-name, .form-hover-add-contact-phone
+      &.error
+        input
+          border: 1px solid red
+
+.contacts-page-media
+  display: none

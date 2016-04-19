@@ -1,0 +1,161 @@
+#index-free-consult
+  background: url("/theme/images/background/index_free_consult_background.jpg") center center
+  background-repeat: no-repeat
+  height: 816px
+  margin-top: 74px
+
+.index-free-consult-left
+  margin-top: 341px
+  width: 65%
+  float: left
+
+  .index-free-consult-left-title
+    line-height: 34px
+    span
+      color: white
+      font-size: 49px
+      font-family: $pfHandbookProthin
+
+  .index-free-consult-left-wTitleUp
+    font-weight: bold
+    margin-left: 9px
+    font-family: $pfHandBookProBold
+    letter-spacing: 0.7px
+  .index-free-consult-left-wTitleDown
+    font-weight: bold
+    margin-right: 12px
+    font-family: $pfHandBookProBold
+
+  .index-free-consult-left-subTitle
+    color: white
+    font:
+      size: 20.76px
+      family: $pfHandbookProthin
+    text-align: left
+    width: 42%
+    float: left
+    position: relative
+    margin-top: 31px
+    padding-left: 2px
+    line-height: 18px
+
+  .index-free-consult-left-subTitleIcon
+    background: url("/theme/images/icons/right-gray-arrow.png") center center
+    background-repeat: no-repeat
+    width: 23px
+    height: 8px
+    display: block
+    position: absolute
+    right: -25px
+    bottom: 2px
+
+.index-free-consult-right
+  width: 374px
+  float: right
+  margin-top: 260px
+  margin-right: 2px
+
+.form-free-wrapper
+  height: 418px
+  width: 100%
+  background-color: white
+  border-bottom-left-radius: 6px
+  border-bottom-right-radius: 6px
+  padding: 11px 35px 5px 35px
+
+  .form-free-title
+    color: $black1
+    font-size: 23px
+    text-align: center
+    text-transform: uppercase
+
+  .form-free-subTitle
+    color: $lightCyan2
+    font-size: 36px
+    text-align: center
+    text-transform: uppercase
+    margin-top: -5px
+
+  .form-free-subTitleSmall
+    font:
+      family: $openSansRegular
+      size: 11px
+    color: $black1
+    text-align: center
+    margin-bottom: 15px
+    padding-left: 7px
+
+#form-free-consult
+  padding-left: 7px
+  padding-right: 4px
+
+  .form-free-consult-name
+    margin-bottom: 16px
+    input
+      +consult-input(url("/theme/images/icons/form-index-user.png") 14px no-repeat)
+    &.error
+      input
+        border: 1px solid red
+
+  .form-free-consult-number
+    margin-bottom: 16px
+    input
+      +consult-input(url("/theme/images/icons/form-index-phone.png") 14px no-repeat)
+      +input-placeholder
+        background: url("/theme/images/icons/input-star.png") 43% center no-repeat !important
+
+
+  .form-free-consult-phone
+    &.error
+      input
+        border: 1px solid red
+
+  .form-free-consult-doctor
+    &.error
+      .select
+        border: 1px solid red
+
+  .form-free-consult-mail
+    margin-bottom: 16px
+    position: relative
+    input
+      +consult-input(url("/theme/images/icons/form-index-message.png") 14px no-repeat)
+
+  .form-free-consult-anonymous
+    background: url("/theme/images/icons/form-index-mask.png") 14px no-repeat
+    width: 100%
+    min-height: 29px
+    font:
+      family: $openSansRegular
+      size: 14px
+    color: $gray25
+    padding-left: 54px
+    padding-top: 3px
+    margin-bottom: 5px
+    font-weight: bolder
+
+.marLeft-3
+  margin-left: -3px
+
+.form-free-consult-submit
+  width: 301px
+  height: 56px
+  background: url("/theme/images/button/free-consult-button.png") center center no-repeat
+  outline: none
+  border: none
+  font:
+    size: 16px
+    family: $openSansRegular
+  color: white
+  text-align: center
+  padding-bottom: 5px
+
+  +transition(all 0.6s)
+  &.activeConsult
+    background: url("/theme/images/icons/direction-add-button-active-icon.png") no-repeat
+    width: 300px
+    height: 50px
+  &:hover
+    background: url("/theme/images/icons/direction-add-button-hover-icon.png") no-repeat
+    width: 301px
+    height: 56px

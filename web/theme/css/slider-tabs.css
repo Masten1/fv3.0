@@ -1,0 +1,210 @@
+.ui-slider-tabs{
+    margin-top: 20px;
+}
+
+.ui-slider-tabs-list-wrapper{
+    position: relative;
+    width: 100%;
+    margin-left: 0;
+    margin-top: 50px;
+    z-index: 50;
+}
+.ui-slider-tabs-list-wrapper.bottom{
+    margin: -1px 0 0 0;
+}
+.ui-slider-tabs-list-container{
+    height: 44px;
+    margin-right: 18px;
+    padding-left: 1px;
+    overflow: hidden;
+}
+
+.ui-slider-tabs-list{
+    margin: 0;
+    padding: 0;
+    height: 43px;
+    min-width: 85.5%;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    transition: all 0.8s;
+    overflow: hidden;
+}
+
+.ui-slider-tabs-list li{
+    height: 43px !important;
+    display: inline-block;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    cursor: pointer;
+    margin-bottom: -2px;
+    padding-top: 6px;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.ui-slider-tabs-list li:last-of-type {
+    display: none;
+}
+
+.ui-slider-tabs-list li a{
+    display: block;
+    text-decoration: none;
+    color: #636363;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.ui-slider-tabs-list li a:hover{
+    text-decoration: none;
+    color: #aeaeae;
+}
+
+.ui-slider-tabs-list li:hover{
+    background-color: #d3f3fe;
+    border-bottom: 1px solid #d3f3fe;
+    border-top: 1px solid #81d6f7;
+    border-right: 1px solid #81d6f7;
+    border-left: 1px solid #81d6f7;
+}
+
+.ui-slider-tabs-list li.selected{
+    background-color: #d3f3fe;
+    border-bottom: 1px solid #d3f3fe;
+    border-top: 1px solid #81d6f7;
+    border-right: 1px solid #81d6f7;
+    border-left: 1px solid #81d6f7;
+}
+
+.ui-slider-tabs-list-wrapper.bottom .ui-slider-tabs-list li.selected{
+    border-top-color: #fff;
+    border-bottom-color: #cfcfcf;
+}
+
+.ui-slider-tabs-list li.selected a{
+    color: black;
+}
+
+.ui-slider-tabs-list li.selected a:hover{
+    cursor: pointer;
+    color: #555;
+}
+
+.ui-slider-tabs-content-container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    margin-left: 0;
+    margin-top: -2px;
+    float: left;
+    border-top: 1px solid #81d6f7;
+}
+
+.ui-slider-tab-content{
+    position: absolute;
+    display: none;
+    top: 0;
+    left: 0;
+    background-color: #d3f3fe;
+    width: 100%;
+    font-family: "pf_agora_sans_proregular", sans-serif
+    font-size: 14px;
+    color: black;
+    border-right: 1px solid #81d6f7;
+    border-left: 1px solid #81d6f7;
+    border-bottom: 1px solid #81d6f7;
+    padding: 12px 25px 37px 12px;
+    text-align: left;
+    line-height: 25px;
+}
+
+.ui-slider-left-arrow, .ui-slider-right-arrow, .ui-slider-left-arrow.edge:hover, .ui-slider-right-arrow.edge:hover{
+    display: block;
+    position: absolute;
+}
+
+.ui-slider-left-arrow{
+    left: 1px;
+    top: -39px;
+}
+.ui-slider-left-arrow div{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #40C0CC;
+    font-family: 'Glyphicons Halflings';
+    background-color: white;
+    color: #40C0CC;
+    font-size: 27px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+}
+
+.ui-slider-left-arrow div:before{
+    content: "\e257";
+    text-decoration: none;
+}
+
+.ui-slider-left-arrow.edge div{
+    opacity: .25;
+}
+.ui-slider-left-arrow.edge{
+    box-shadow: none;
+    cursor: default;
+}
+.ui-slider-tabs-list-wrapper.bottom .ui-slider-left-arrow{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 4px;
+}
+
+.ui-slider-right-arrow{
+    top: -39px;
+    right: 1px;
+    text-decoration: none;
+}
+
+.ui-slider-right-arrow:hover {
+    text-decoration: none;
+}
+
+.ui-slider-right-arrow:focus {
+    text-decoration: none;
+}
+
+.ui-slider-left-arrow:hover {
+    text-decoration: none;
+}
+
+.ui-slider-left-arrow:focus {
+    text-decoration: none;
+}
+
+.ui-slider-right-arrow div{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #40C0CC;
+    font-family: 'Glyphicons Halflings';
+    background-color: white;
+    color: #40C0CC;
+    font-size: 27px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 34px;
+}
+
+.ui-slider-right-arrow div:before{
+    content: "\e258";
+    text-decoration: none;
+}
+
+.ui-slider-right-arrow.edge div{
+    opacity: .25;
+}
+.ui-slider-right-arrow.edge{
+    box-shadow: none;
+    cursor: default;
+}

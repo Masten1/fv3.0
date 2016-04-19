@@ -1,0 +1,4 @@
+abstract:
+    iWebAccess:
+        fields:
+            url: { type: string, unique: true }

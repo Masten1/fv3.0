@@ -1,0 +1,237 @@
+#navigation-footer
+  min-height: 100px
+  background-color: $darkBlue1
+
+.navigation-footer
+  height: 100px
+  display: table
+
+.nav-footer-logo
+  width: 230px
+  height: 67px
+  float: left
+  padding-top: 10px
+
+  img
+    max-width: 100%
+    height: auto
+
+.nav-footer-wrapper
+  width: 635px
+  float: left
+  line-height: 104px
+  margin-left: 21px
+  overflow: hidden
+  .nav-footer-line
+    color: white
+    height: 20px
+    width: 11px
+    float: left
+  ul
+    list-style: none
+    padding: 0
+    margin: 0
+    li
+      float: left
+      padding: 0 13px
+
+      a
+        font:
+          family: $segoeLight
+          size: 12px
+        color: white
+        &:hover
+          color: white
+          text-decoration: none
+
+      .active-menu
+        color: $lightCyan2
+        text-decoration: underline
+        &:hover
+          color: $lightCyan2
+          text-decoration: underline
+
+      ul
+        li
+          position: relative
+          padding-left: 30px
+          +transition(all 0.3s)
+          .footer-children-arrow
+            background: url("/theme/images/icons/dir-arrow-left.png") center center no-repeat
+            width: 18px
+            height: 18px
+            position: absolute
+            left: 1px
+            top: 29%
+            +transition(all 0.3s)
+
+          &:hover, &:active, &:focus
+            padding-left: 40px
+            .footer-children-arrow
+              left: 10px
+            a
+              color: #3cc1cc
+
+
+.nav-footer-info
+  width: 208px
+  height: 100px
+  position: relative
+  float: right
+  padding-top: 16px
+
+  .footer-phone-small
+    width: 78px
+    float: left
+    span
+      color: white
+      font:
+        family: $pfDinDispayPro
+        size: 23.39px
+
+    .footer-phone-small-1
+      border-right: 1px solid white
+      padding-right: 8px
+      font-size: 14px
+
+    .footer-phone-small-2
+      padding-left: 5px
+      font-size: 14px
+
+  .footer-phone-large
+    width: 61%
+    float: left
+    color: white
+    font-size: 24px
+    margin-top: -2px
+    padding-left: 3px
+    letter-spacing: -1.5px
+    a
+      color: white
+      text-decoration: none
+      &:hover
+        color: white
+        text-decoration: none
+
+  .footer-phone-icon
+    background: url("/theme/images/icons/footer_phone_icon.png") no-repeat 0 0
+    display: block
+    width: 18px
+    height: 17px
+    position: absolute
+    top: 22px
+    right: 5px
+
+#nav-footer-question
+  width: 100%
+  height: 27px
+  line-height: 24px
+  +user-select(none)
+  cursor: pointer
+  border-radius: 3px
+  background-color: $lightCyan2
+  text-align: center
+  color: white
+  font:
+    family: $segoeLight
+    size: 14px
+  margin-top: 38px
+  +transition(all 0.6s)
+  &.nav-footer-question-active
+    background-color: darken($lightCyan2, 10%)
+  &:hover
+    background-color: lighten($lightCyan2, 10%)
+
+
+.question-wrapper-add
+  @extend .hover-wrapper-add
+
+  #form-hover-footer-question
+    @extend #form-hover-add
+    .form-hover-add-mail
+      margin-bottom: 16px
+      position: relative
+      input
+        +consult-input(url("/theme/images/icons/form-index-message.png") 14px no-repeat)
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 28% center no-repeat !important
+
+    .form-hover-add-name
+      input
+        +input-placeholder
+          background: url("/theme/images/icons/input-star.png") 35% center no-repeat !important
+
+    .form-hover-add-text
+      textarea
+        width: 100%
+        border-radius: 3px
+        border: 1px solid $lightBlue6
+        padding-left: 11px
+        min-height: 115px
+        padding-top: 10px
+        font:
+          family: $openSansRegular
+          size: 14px
+        color: $black1
+        +consult-input(url("/theme/images/icons/form-message.png") 14px 13px no-repeat)
+
+
+#form-hover-footer-question
+  .form-hover-footer-name, .form-hover-footer-email, .form-hover-footer-question
+    &.error
+      input, textarea
+        border: 1px solid red
+
+#index-google-map
+  width: 100%
+  height: 560px
+
+
+.static-up
+  position: fixed
+  cursor: pointer
+  z-index: 3000
+  bottom: 17%
+  right: 2%
+  height: auto
+  display: none
+  .static-up-icon
+    background: url("/theme/images/icons/go-up.png") center center no-repeat
+    width: 74px
+    height: 74px
+    cursor: pointer
+    float: left
+    +user-select(none)
+    outline: none
+    &:hover, &:active
+      background: url("/theme/images/icons/go-up-hover.png") center center no-repeat
+      width: 74px
+      height: 74px
+    a
+      display: block
+      width: 74px
+      height: 74px
+      text-decoration: none
+      &:hover
+        text-decoration: none
+
+.deeper
+  position: relative
+  ul
+    position: absolute
+    bottom: 60px
+    left: -140%
+    padding: 0
+    height: 75px
+    display: none
+    width: 560%
+    background-color: $lightCyan3
+    white-space: nowrap
+
+    li
+      padding: 0 12px
+      height: 50px
+      white-space: nowrap
+  &:hover
+    ul
+      display: block

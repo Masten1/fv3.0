@@ -1,0 +1,6 @@
+mailer:
+  port: 25
+  smtp: false
+  smtpAuth: false
+  from: noreply@medportal.com
+  fromName: MedPortal
