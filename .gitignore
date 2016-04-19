@@ -1,7 +1,5 @@
-data/vendor
 .idea
 node/node_modules
-web/theme/stylesheets
 *.sass-cache
 web/theme/images/icon-*.png
 web/theme/images/icon2x-*.png
