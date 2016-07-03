@@ -22,3 +22,5 @@ if( FV_PROFILE && ! fvRequest::getInstance()->isXmlHttpRequest() ){
     Profile::startTime( $startTime );
     Profile::show();
 }
+
+echo "test";
